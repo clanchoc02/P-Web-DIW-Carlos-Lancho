@@ -1,0 +1,150 @@
+/* Configuración básica: Ajusta box-sizing para incluir bordes y padding en el tamaño total de los elementos */
+* {
+    box-sizing: border-box;
+}
+
+/* Estilo del body: Centra contenido y adapta la disposición */
+body {
+    margin: 0px;
+    background-color: #393333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    display: flex;
+    justify-content: center; /* Centra contenido horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
+}
+
+/* Estilo para títulos */
+h2 {
+    font-style: oblique; /* Texto inclinado */
+    text-decoration: underline; /* Subraya el texto */
+    font-family: 'Montserrat', sans-serif; /* Fuente personalizada */
+}
+
+/* Estilo de párrafos dentro de la clase .san_isidro */
+.san_isidro {
+    font-size: 20px; /* Tamaño del texto */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin: auto; /* Centrado automático */
+    border-bottom: 2px solid #7F7F7F; /* Línea inferior */
+    max-width: 60%; /* Ancho máximo */
+    height: auto; /* Altura automática */
+    text-align: justify; /* Justifica el texto */
+    padding: 1%; /* Espaciado interno */
+}
+
+/* Imagen principal */
+#imagen1 {
+    max-width: 100%; /* Imagen ocupa todo el ancho disponible */
+    border: none;
+    margin: 0%;
+}
+
+/* Estilo de imágenes dentro de la clase .san_isidro */
+.san_isidro img {
+    border: 10px double #ADD8E6; /* Borde doble de color azul */
+}
+
+/* Configuración de contenedores principales */
+.articulo1 {
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Ajusta altura automáticamente */
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Apila elementos en columna */
+}
+
+/* Imágenes dentro de .articulo1 */
+.articulo1 img {
+    max-width: 70%; /* Ocupa el 70% del contenedor */
+}
+
+/* Texto en .articulo1 */
+.articulo1 p {
+    font-style: oblique; /* Texto inclinado */
+}
+
+/* Contenedores secundarios: Artículo 2 y 3 */
+.articulo2, .articulo3 {
+    max-width: 100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-content: center; /* Centra el contenido dentro del contenedor */
+    gap: 20px; /* Espaciado entre los elementos */
+}
+
+/* Imágenes dentro de la clase .imagen3 */
+.imagen3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column; /* Elementos en columna */
+}
+
+/* Texto con estilo azul claro */
+.articulo1 p, .imagen2 p, .imagen3 p {
+    font-size: 18px; /* Tamaño del texto */
+    color: #ADD8E6; /* Azul claro */
+}
+
+/* Imágenes dentro de .imagen2 y .imagen3 */
+.imagen2 img, .imagen3 img {
+    margin-top: 10%; /* Margen superior */
+    max-width: 100%; /* Imagen ocupa todo el ancho disponible */
+    align-items: center;
+}
+
+/* Contenedores de texto e imágenes */
+.texto1, .imagen2, .texto2, .imagen3 {
+    margin-left: 4%; /* Margen izquierdo */
+    margin-right: 4%; /* Margen derecho */
+    width: 40%; /* Ocupan el 40% del contenedor */
+    transition: transform 0.3s ease; /* Transición suave al hacer hover */
+}
+
+/* Efecto de zoom al pasar el ratón */
+.articulo1:hover, .imagen2:hover, .imagen3:hover {
+    transform: scale(1.05); /* Incrementa el tamaño ligeramente */
+}
+
+/* --- Responsivo para pantallas medianas (máximo ancho de 1024px) --- */
+@media (max-width: 1024px) {
+    .san_isidro {
+        font-size: 18px; /* Reduce tamaño de texto */
+        max-width: 80%; /* Aumenta el ancho máximo */
+    }
+
+    .articulo1 img {
+        max-width: 80%; /* Imágenes más grandes */
+    }
+
+    .texto1, .imagen2, .texto2, .imagen3 {
+        width: 45%; /* Ajusta el ancho al 45% del contenedor */
+    }
+
+    .articulo2, .articulo3 {
+        gap: 15px; /* Reduce el espacio entre elementos */
+    }
+}
+
+/* --- Responsivo para pantallas pequeñas (máximo ancho de 768px) --- */
+@media (max-width: 768px) {
+    .texto1, .imagen2, .texto2, .imagen3 {
+        flex: 1 1 100%; /* Forzar disposición en columna */
+        max-width: 100%; /* Usar todo el ancho */
+    }
+
+    body {
+        font-size: 100%;
+    }
+
+    .articulo1 img {
+        max-width: 100%; /* Imágenes ocupan todo el ancho */
+    }
+
+    .articulo2, .articulo3 {
+        flex-direction: column; /* Los elementos se apilan en columna */
+        gap: 10px; /* Reduce el espacio entre elementos */
+    }
+}

@@ -1,0 +1,136 @@
+/* Ajuste general de box-sizing */
+* {
+    box-sizing: border-box; /* Incluye bordes y padding en el tamaño total */
+}
+
+/* Estilo general del body */
+body {
+    margin: 0px; /* Elimina margen por defecto */
+    background-color: #393333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    display: flex; /* Contenedor flexible */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
+}
+
+/* Estilo del título principal */
+h2 {
+    font-style: oblique; /* Texto inclinado */
+    text-decoration: underline; /* Subraya el texto */
+    font-family: 'Montserrat', sans-serif; /* Fuente personalizada */
+}
+
+/* Contenedor de texto "La Patatera" */
+.la_patatera {
+    font-size: 20px; /* Tamaño de fuente */
+    line-height: 1.5; /* Espaciado entre líneas */
+    margin: auto; /* Centra el contenedor horizontalmente */
+    border-bottom: 2px solid #7F7F7F; /* Línea inferior gris */
+    max-width: 60%; /* Ancho máximo del contenedor */
+    height: auto; /* Ajusta la altura automáticamente */
+    text-align: justify; /* Alinea el texto de forma justificada */
+    padding: 1%; /* Espaciado interno */
+}
+
+/* Imagen principal */
+#imagen1 {
+    max-width: 100%; /* Imagen ocupa todo el ancho disponible */
+    border: none; /* Sin borde */
+    margin: 0%; /* Sin margen */
+}
+
+/* Imágenes dentro de "La Patatera" */
+.la_patatera img {
+    border: 10px groove #ADD8E6; /* Borde con estilo "groove" azul claro */
+}
+
+/* Contenedores para los artículos */
+.articulo1, .articulo2 {
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Ajusta la altura automáticamente */
+    display: flex; /* Contenedor flexible */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten */
+    align-items: center; /* Centra los elementos verticalmente */
+    justify-content: center; /* Centra los elementos horizontalmente */
+    align-content: center; /* Centra el contenido */
+    gap: 20px; /* Espaciado entre elementos */
+}
+
+/* Artículo con disposición inversa */
+.articulo2 {
+    flex-wrap: wrap-reverse; /* Invierte la disposición de los elementos */
+}
+
+/* Texto en las imágenes de "imagen2" y "imagen3" */
+.imagen2 p, .imagen3 p {
+    font-size: 18px; /* Tamaño del texto */
+    color: #ADD8E6; /* Texto azul claro */
+}
+
+/* Imágenes dentro de "imagen2" y "imagen3" */
+.imagen2 img, .imagen3 img {
+    margin-top: 10%; /* Margen superior */
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+}
+
+/* Contenedores con texto e imágenes */
+.texto1, .imagen2, .texto2, .imagen3 {
+    margin-left: 4%; /* Margen izquierdo */
+    margin-right: 4%; /* Margen derecho */
+    width: 40%; /* Ocupan el 40% del ancho del contenedor */
+    transition: transform 0.3s ease; /* Transición suave para hover */
+}
+
+/* Efecto hover en las imágenes */
+.imagen2:hover, .imagen3:hover {
+    transform: scale(1.05); /* Zoom suave al pasar el cursor */
+}
+
+/* --- Responsividad para pantallas medianas (máximo 1024px) --- */
+@media (max-width: 1024px) {
+    /* Ajuste de texto e imágenes en contenedores */
+    .texto1, .imagen2, .texto2, .imagen3 {
+        width: 45%; /* Incrementa ligeramente el ancho al 45% */
+        margin-left: 2%; /* Reduce el margen lateral */
+        margin-right: 2%;
+    }
+
+    /* Ajuste del texto principal */
+    .la_patatera {
+        font-size: 18px; /* Reduce el tamaño de fuente */
+    }
+
+    /* Ajuste de las imágenes */
+    .imagen2 img, .imagen3 img {
+        max-width: 90%; /* Reduce el ancho máximo al 90% */
+    }
+
+    /* Ajuste del título */
+    h2 {
+        font-size: 1.8em; /* Reduce el tamaño del título */
+    }
+}
+
+/* --- Responsividad para pantallas pequeñas (máximo 768px) --- */
+@media (max-width: 768px) {
+    /* Texto e imágenes en una sola columna */
+    .texto1, .imagen2, .texto2, .imagen3 {
+        flex: 1 1 100%; /* Cada elemento ocupa todo el ancho */
+        max-width: 100%; /* Usar todo el ancho disponible */
+    }
+
+    /* Ajuste general del body */
+    body {
+        font-size: 100%; /* Mantener tamaño del texto */
+    }
+
+    /* Imágenes ocupan todo el ancho */
+    .imagen2 img, .imagen3 img {
+        max-width: 100%; /* Imágenes ocupan todo el ancho disponible */
+    }
+
+    /* Espaciado reducido en artículos */
+    .articulo1, .articulo2 {
+        gap: 10px; /* Reduce el espacio entre elementos */
+    }
+}

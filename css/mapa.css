@@ -1,0 +1,128 @@
+/* General Styles */
+* {
+    box-sizing: border-box; /* Asegura que el padding y borde no expandan el tamaño de los elementos */
+}
+
+body {
+    margin: 0px; /* Elimina márgenes predeterminados del body */
+    background-color: #393333; /* Color de fondo principal */
+    color: white; /* Color del texto */
+    display: flex; /* Configura un diseño flexible */
+    flex-direction: column; /* Apila los elementos en una columna */
+}
+
+/* Estilo principal del mapa */
+#mapa-principal {
+    position: relative; /* Necesario para posicionar elementos dentro del contenedor */
+    display: flex; /* Centra los elementos internamente */
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 400px; /* Altura fija del mapa */
+    border: 2px solid #ffce00; /* Borde amarillo */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3); /* Sombra para dar profundidad */
+    color: black; /* Color del texto */
+    margin: 8% 2% 0% 2%; /* Márgenes externos */
+}
+
+/* Título del mapa */
+#mapa-principal h2 {
+    margin-bottom: 1rem; /* Espaciado inferior */
+    font-size: 1.8rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    text-align: center; /* Centrado horizontal */
+    color: white; /* Color blanco del texto */
+}
+
+/* Contenedor de los puntos */
+.mapa-contenedor {
+    position: relative; /* Necesario para posicionar los puntos en base al contenedor */
+    width: 100%; /* Ocupa el ancho total del mapa */
+    height: 100%; /* Ocupa la altura total del mapa */
+}
+
+/* Líneas que conectan los puntos */
+.lineas {
+    position: absolute; /* Permite que las líneas floten sobre el contenedor */
+    width: 100%;
+    height: 100%;
+    pointer-events: none; /* Evita que las líneas interfieran con los clics */
+}
+
+.lineas line {
+    stroke: #ffce00; /* Color amarillo para las líneas */
+    stroke-width: 2; /* Grosor de las líneas */
+    marker-end: url(#flecha); /* Agrega flecha al final de las líneas (si está configurada) */
+}
+
+/* Estilo de los puntos de interés */
+.punto-interes {
+    position: absolute; /* Permite posicionar los puntos en coordenadas específicas */
+    transform: translate(-50%, -50%); /* Centra los puntos */
+    text-align: center; /* Texto centrado */
+}
+
+.punto-interes a {
+    display: block; /* Hace que el enlace sea un bloque clicable */
+    background-color: #ffce00; /* Fondo amarillo */
+    color: black; /* Texto negro */
+    font-size: 1rem; /* Tamaño de la fuente */
+    font-weight: bold; /* Negrita */
+    padding: 0.5rem 1rem; /* Espaciado interno */
+    border-radius: 5px; /* Bordes redondeados */
+    text-decoration: none; /* Sin subrayado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para efecto de elevación */
+    transition: transform 0.3s, background-color 0.3s; /* Transiciones suaves al pasar el ratón */
+}
+
+.punto-interes a:hover {
+    background-color: #e5b800; /* Fondo más claro al pasar el ratón */
+    transform: scale(1.1); /* Efecto de escala */
+}
+
+/* --- Responsivo para pantallas medianas (tablets) --- */
+@media (max-width: 1024px) {
+    #mapa-principal {
+        height: 350px; /* Reduce la altura del mapa */
+        margin: 5% 5% 0 5%; /* Ajusta los márgenes */
+    }
+
+    #mapa-principal h2 {
+        font-size: 1.5rem; /* Reduce el tamaño de la fuente del título */
+    }
+
+    .punto-interes a {
+        font-size: 0.9rem; /* Reduce el tamaño del texto en los puntos */
+        padding: 0.4rem 0.8rem; /* Reduce el espaciado interno */
+    }
+
+    .lineas line {
+        stroke-width: 1.5; /* Adelgaza las líneas */
+    }
+}
+
+/* --- Responsivo para pantallas pequeñas (móviles) --- */
+@media (max-width: 768px) {
+    #mapa-principal {
+        height: 300px; /* Altura más compacta para móviles */
+        margin: 30% 4% 0 4%; /* Reduce los márgenes laterales */
+    }
+
+    #mapa-principal h2 {
+        font-size: 1.2rem; /* Reduce aún más el tamaño de la fuente */
+    }
+
+    .punto-interes a {
+        font-size: 0.8rem; /* Texto más pequeño para ahorrar espacio */
+        padding: 0.3rem 0.6rem; /* Espaciado más compacto */
+    }
+
+    .punto-interes {
+        text-align: center; /* Asegura que el texto de los puntos se mantenga centrado */
+    }
+
+    .lineas line {
+        stroke-width: 1; /* Líneas más finas */
+    }
+}

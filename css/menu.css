@@ -1,0 +1,291 @@
+.encabezado {
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro transparente */
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    color: white;
+    position: fixed;
+    z-index: 100;
+}
+
+#encabezadoParte1, #encabezadoParte2, #encabezadoParte3{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 40px;
+}
+
+#encabezadoParte2 h1, .seccion2-1, .seccion2-2 {
+    
+    white-space: nowrap;
+    font-size: 2em;
+    max-width: 30%;
+    text-align: center;
+
+}
+
+.seccion2-1 {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.seccion2-2 {
+    display: flex;
+    justify-content: flex-start;
+}
+
+#encabezadoParte2 section:nth-child(2) {
+    padding-left: 2%;
+    padding-right: 2%;
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+#icono-login, #icono-idiomas, #icono-menu, #icono-lupa {
+
+    max-width: 20px; /* Ajusta el tamaño de ícono aquí */
+    max-height: 20px;
+
+}
+
+.seccion1-2, .seccion3-2 {
+
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 10px; /* Espaciado entre la imagen y el texto */
+
+}
+
+#idiomas, #cuadro-busqueda {
+
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2%;
+    color: white;
+
+}
+
+#idiomas::placeholder, #cuadro-busqueda::placeholder {
+
+    color: white;
+
+}
+
+.seccion1-1>a, .seccion3-1>label {
+
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    gap: 10px; /* Espaciado entre la imagen y el texto */
+    padding: 10px;
+
+}
+
+.seccion1-1:hover, .seccion3-1:hover,
+#idiomas:hover, #cuadro-busqueda:hover,
+#idiomas:focus, #cuadro-busqueda:focus {
+
+    border: 1px solid  #00FFFF;
+    background-color: darkred;
+    box-shadow: 0 0 10px #00FFFF; /* Efecto de brillo */
+
+}
+
+#logo {
+
+    max-width: 15%;
+    max-height: auto;
+
+}
+
+#escudo {
+
+    max-width: 8.5%;
+    max-height: auto;
+
+}
+
+/* Ocultar el checkbox (controlador del menú) */
+.menu-checkbox {
+    display: none;
+}
+
+/* Submenú oculto por defecto */
+.submenu {
+    display: none;
+}
+
+/* Mostrar el submenú cuando el checkbox está marcado */
+.menu-checkbox:checked + .submenu {
+    display: block;
+}
+
+.submenu {
+
+    max-width: 100%; /* Ancho completo del contenedor */
+    height: 55px;
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo del menú */
+    border-radius: 15px; /* Bordes redondeados */
+    overflow: hidden; /* Evita desbordamientos */
+    margin-top: 1%;
+    text-align: center;
+
+}
+
+/* Menú horizontal con transiciones */
+/* Formato general de cada item */
+.menu {
+    display: inline-block;
+    position: relative;
+    height: auto;
+    width: 20%;
+    margin-left: 0;
+    overflow: hidden;
+}
+
+/* Bordes superiores */
+.menu.inicio {
+    border-top: #b81800 0.4em solid;
+}
+
+.menu.turismo {
+    border-top: #00a53c 0.4em solid;
+}
+
+.menu.favoritos {
+    border-top: rgb(0, 94, 255) 0.4em solid;
+}
+
+.menu.mapa {
+    border-top: #ffc000 0.4em solid;
+}
+
+.menu.encuesta {
+    border-top: #9600b4 0.4em solid;
+}
+
+/* Atributos y transición */
+.menu>span {
+    display: block;
+    position: absolute;
+    overflow: hidden;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 0%;
+    transition: 0.5s ease-in-out;
+    -webkit-transition: 0.5s ease-in-out;
+}
+
+.menu:after,
+.menu>span>span {
+    display: block;
+    text-align: center;
+    border-radius: 0em;
+    padding: 1em 0em;
+    padding-bottom: 1em;
+}
+
+.menu:after {
+    content: attr(data-title);
+    width: 100%;
+    color: #fff;
+}
+
+.menu>span>span {
+    width: 100%;
+    color: #fff;
+}
+
+.menu.inicio>span>span {
+    background: #b81800;
+}
+
+.menu.turismo>span>span {
+    background: #00a53c;
+}
+
+.menu.favoritos>span>span {
+    background: rgb(0, 94, 255);
+}
+
+.menu.mapa>span>span {
+    background: #ffc000;
+}
+
+.menu.encuesta>span>span {
+    background: #9600b4;
+}
+
+/* Lo que pasa con hover */
+.menu:hover>span {
+    height: 100%;
+}
+
+/* Dando formato a lista */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+li a {
+    display: inline;
+    float: left;
+    text-decoration: none;
+    font-family: sans;
+}
+
+.verde:hover {
+    background: #00a53c; 
+}
+
+#submenu {
+    left: 20.3%;
+    opacity: 0;
+    position: absolute;
+    top: 30%;
+    visibility: hidden;
+    z-index: 1;
+    width: 19.8%;
+}
+
+li:hover ul#submenu {
+    opacity: 1;
+    top: 95.5%;
+    visibility: visible;
+}
+
+#submenu li {
+    width: 100%;
+}
+
+#submenu a:link {
+    background: #00a53c;
+}
+
+#submenu a:visited {
+    background: #9600b4;
+}
+
+#submenu a:focus {
+    background: #ffc000;
+}
+
+#submenu a:hover {
+    background: #DF4B05;
+}
+
+#submenu a:active {
+    background: #b81800;
+}
+
+#submenu a {
+    background-color: rgba(0, 0, 0, 0.4); /* Fondo del menú */
+    text-decoration: none;
+    color: white;
+    padding: 2%;
+    width: 100%;
+}

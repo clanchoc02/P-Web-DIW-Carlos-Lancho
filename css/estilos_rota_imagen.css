@@ -1,0 +1,231 @@
+/* Estilo global para el body */
+body {
+    margin: 0; /* Elimina márgenes por defecto */
+    padding: 0; /* Elimina padding por defecto */
+}
+
+/* Contenedor principal */
+.contenedor {
+    position: relative; /* Posicionamiento relativo para superposición de elementos */
+    box-sizing: border-box; /* Incluye bordes y padding en el tamaño total */
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    display: flex; /* Contenedor flexible */
+}
+
+/* Imágenes dentro del contenedor */
+.contenedor img {
+    width: 100%; /* Imagen ocupa todo el ancho del contenedor */
+    display: flex; /* Diseño flexible */
+}
+
+/* Contenedor para los círculos */
+.circulos {
+    width: 50vw; /* Ocupa la mitad del ancho de la ventana */
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor */
+    top: 90%; /* Ubicación vertical al 90% del contenedor */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajuste para centrar */
+    display: flex; /* Contenedor flexible */
+    gap: 10px; /* Espaciado entre los círculos */
+    align-items: center; /* Centra verticalmente los elementos */
+    justify-content: center; /* Centra horizontalmente los elementos */
+}
+
+/* Estilo de enlaces dentro de los círculos */
+.circulos a {
+    text-decoration: none; /* Sin subrayado */
+}
+
+/* Estilo de los botones */
+.boton {
+    font-size: 24px; /* Tamaño del texto */
+    color: white; /* Texto blanco */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el botón */
+    background-color: darkred; /* Fondo rojo oscuro */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 50%; /* Forma circular */
+    text-align: center; /* Centra el texto */
+    width: 15px; /* Ancho fijo */
+    height: 15px; /* Altura fija */
+    display: flex; /* Contenedor flexible */
+    align-items: center; /* Centra el contenido verticalmente */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Efecto hover en los botones */
+.boton:hover {
+    border: 2px solid #00FFFF; /* Borde azul claro */
+}
+
+/* Estilo de los círculos */
+.circulo {
+    width: 1vw; /* Ancho proporcional al ancho de la ventana */
+    height: 3vh; /* Altura proporcional al alto de la ventana */
+    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro transparente */
+    border-radius: 50%; /* Forma circular */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el círculo */
+    border: 2px solid rgba(0, 0, 0, 0.6); /* Borde oscuro transparente */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Efectos hover y estado activo en círculos */
+.circulo:hover, .circulo.activo {
+    background-color: darkred; /* Fondo rojo oscuro */
+    border: 2px solid #00FFFF; /* Borde azul claro */
+}
+
+/* Estilo para el contenedor del título */
+.titulo {
+    display: inline-block; /* Mostrar en línea con otros elementos */
+    position: absolute; /* Posicionamiento absoluto dentro del contenedor */
+    top: 68%; /* Ubicación vertical al 68% del contenedor */
+    width: 40%; /* Ocupa el 40% del ancho */
+    transform: translateY(-50%); /* Ajuste para centrar verticalmente */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro transparente */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+    border-radius: 0 10px 10px 0; /* Bordes redondeados en una esquina */
+}
+
+/* Estilo para los spans dentro del título */
+.titulo span {
+    float: right; /* Alineación a la derecha */
+}
+
+.titulo span span:first-child {
+    float: left; /* Alineación a la izquierda */
+    padding: 15px; /* Espaciado interno */
+    text-align: right; /* Texto alineado a la derecha */
+}
+
+.titulo span span:last-child {
+    float: right; /* Alineación a la derecha */
+}
+
+/* Estilo para enlaces de navegación */
+.enlace {
+    font-size: 40px; /* Tamaño del símbolo */
+    color: white; /* Color blanco */
+    cursor: pointer; /* Cambia el cursor al pasar sobre el enlace */
+    background-color: darkred; /* Fondo rojo oscuro */
+    padding: 10px; /* Espaciado interno */
+    border-radius: 0 10px 10px 0; /* Bordes redondeados en una esquina */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Estilo de los enlaces dentro del contenedor de navegación */
+.enlace a {
+    text-decoration: none; /* Sin subrayado */
+    color: inherit; /* Hereda el color del padre */
+}
+
+/* Contenedor de la descripción */
+.descripcion {
+    text-align: right; /* Texto alineado a la derecha */
+    position: absolute; /* Posicionamiento absoluto */
+    top: 81%; /* Ubicación vertical al 81% del contenedor */
+    width: 30%; /* Ocupa el 30% del ancho */
+    transform: translateY(-50%); /* Ajuste para centrar verticalmente */
+    background-color: rgba(0, 0, 0, 0.7); /* Fondo oscuro transparente */
+    padding: 10px; /* Espaciado interno */
+    display: inline-block; /* Mostrar en línea con otros elementos */
+    border-radius: 0 10px 10px 0; /* Bordes redondeados en una esquina */
+    box-shadow: 10px 10px 15px rgba(0, 0, 0, 0.3); /* Sombra */
+}
+
+/* Estilo para el texto del título */
+.titulo h1 {
+    color: white; /* Texto blanco */
+    margin: 0; /* Sin margen */
+}
+
+/* Estilo para el texto dentro de la descripción */
+.descripcion p {
+    color: white; /* Texto blanco */
+    margin: 0; /* Sin margen */
+    white-space: nowrap; /* Evita que el texto se corte */
+}
+
+/* Estilo general para las imágenes */
+img {
+    max-height: 600px; /* Altura máxima fija */
+    width: auto; /* Ajusta el ancho para mantener proporciones */
+}
+
+/* Pantallas medianas (tamaño tablet) */
+@media (max-width: 1024px) {
+    .titulo {
+        width: 40%; /* Ajustar el ancho del título */
+        top: 60%; /* Reajustar la posición vertical */
+        font-size: 16px; /* Reducir el tamaño del texto */
+    }
+
+    .titulo h1 {
+        font-size: 20px; /* Reducir el tamaño del título */
+    }
+
+    .descripcion {
+        width: 25%; /* Ampliar la descripción para mayor legibilidad */
+        top: 85%; /* Ajustar la posición */
+        font-size: 14px; /* Reducir el tamaño del texto de la descripción */
+    }
+
+    .circulos {
+        width: 60vw; /* Aumentar el ancho para que se vea proporcional */
+        gap: 8px; /* Reducir la separación entre los círculos */
+        top: 85%
+    }
+
+    .circulo {
+        width: 2vw;
+        height: 2vh;
+    }
+
+    img {
+        max-height: 500px; /* Reducir la altura máxima de las imágenes */
+    }
+}
+
+/* Pantallas pequeñas (tamaño móvil) */
+@media (max-width: 768px) {
+
+    .titulo {
+        width: 60%; /* Ocupa más espacio horizontal */
+        top: 40%; /* Ajustar la posición vertical */
+        font-size: 14px; /* Reducir aún más el tamaño del texto */
+        padding: 0px; /* Ajustar el espaciado interno */
+    }
+
+    .titulo h1 {
+        font-size: 18px; /* Reducir tamaño del texto del título */
+        text-align: center; /* Centrar el texto */
+    }
+
+    .descripcion {
+        width: 60%; /* Hacer más ancha la descripción */
+        top: 65%; /* Ajustar posición */
+        font-size: 12px; /* Reducir el tamaño del texto */
+        text-align: right; /* Centrar el texto */
+        padding: 8px; /* Ajustar espaciado interno */
+    }
+
+    .circulos {
+        top: 78%;
+        width: 80vw; /* Ajustar al ancho de la pantalla */
+        gap: 6px; /* Reducir separación entre los círculos */
+    }
+
+    .circulo {
+        width: 3vw;
+        height: 3vh;
+    }
+
+    .enlace {
+        font-size: 30px; /* Reducir tamaño del botón de enlace */
+    }
+
+    img {
+        max-height: 400px; /* Reducir la altura máxima de las imágenes */
+        width: 100%; /* Asegurar que las imágenes ocupen todo el ancho disponible */
+    }
+}

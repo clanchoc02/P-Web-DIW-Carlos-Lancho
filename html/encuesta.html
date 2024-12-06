@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <!-- Metadatos y configuración básica -->
+    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Malpartida de Cáceres</title>
+
+    <!-- Icono y estilos -->
+    <link rel="icon" type="image/png" href="../imagenes/logo.png">
+    <link rel="stylesheet" href="../css/encuesta.css" type="text/css">
+    <link rel="stylesheet" href="../css/menu.css" type="text/css">
+    <link rel="stylesheet" href="../css/pie.css" type="text/css">
+    <!-- Script para gestionar idiomas -->
+    <script defer src="idiomas.js"></script>
+</head>
+
+<body>
+
+    <!-- Encabezado de la página -->
+    <header class="encabezado">
+
+        <!-- Primera parte del encabezado (registro e idiomas) -->
+        <div id="encabezadoParte1">
+            
+            <!-- Sección para el registro o login -->
+            <div class="seccion1-1">
+                <a>
+                    <img src="../imagenes/login.png" alt="login.png" id="icono-login">
+                    <span>Registrarse</span>
+                </a>
+            </div>
+            
+            <!-- Sección para seleccionar idioma -->
+            <div class="seccion1-2">
+                <!-- Input para seleccionar el idioma -->
+                <input list="idiomas-lista" id="idiomas" placeholder="Selecciona un idioma">
+                
+                <!-- Lista de idiomas disponibles -->
+                <datalist id="idiomas-lista">
+                    <option value="Español"></option>
+                    <option value="Inglés"></option>
+                    <option value="Francés"></option>
+                    <option value="Alemán"></option>
+                    <option value="Italiano"></option>
+                </datalist>
+
+                <!-- Icono representativo del idioma -->
+                <label for="idioma-selector" class="seccion1-2">
+                    <img src="../imagenes/idioma.png" alt="idioma.png" id="icono-idiomas">
+                </label>
+            </div>
+
+        </div>
+
+        <!-- Segunda parte del encabezado (logo, título, escudo) -->
+        <div id="encabezadoParte2">
+            <section class="seccion2-1">
+                <!-- Logo de la página -->
+                <img id="logo" src="../imagenes/logo.png" alt="logo.png" title="Logo de Malpartida de Cáceres">
+            </section>
+            <section>
+                <!-- Título principal de la página -->
+                <h1>Malpartida de Cáceres</h1>
+            </section>
+            <section class="seccion2-2">
+                <!-- Escudo de la localidad -->
+                <img id="escudo" src="../imagenes/escudo.png" alt="escudo.png" title="Escudo de Malpartida de Cáceres">
+            </section>
+        </div>
+
+        <!-- Tercera parte del encabezado (menú y búsqueda) -->
+        <div id="encabezadoParte3">
+
+            <!-- Botón para abrir el menú -->
+            <div class="seccion3-1">
+                <label for="menu-checkbox">
+                    <img src="../imagenes/menu.png" alt="Menú" id="icono-menu"> 
+                    <span>Menú</span>
+                </label>
+            </div>
+
+            <!-- Campo de búsqueda -->
+            <div class="seccion3-2">
+                <input type="text" id="cuadro-busqueda" placeholder="Buscar">
+                <label for="cuadro-busqueda">
+                    <img src="../imagenes/lupa.png" alt="lupa.png" id="icono-lupa">
+                </label>
+            </div>
+            
+        </div>
+
+        <!-- Checkbox oculto para controlar el estado del menú -->
+        <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+
+        <!-- Submenú de navegación -->
+        <nav class="submenu">
+            <ul>
+                <li>
+                    <a class="menu inicio" href="index.html" data-title="Inicio">
+                        <span>
+                            <span>Inicio</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu turismo" href="#" data-title="Turismo">
+                        <span>
+                            <span>Turismo</span>
+                        </span>
+                    </a>
+                    <ul id="submenu">
+                        <li><a href="juegoTronos.html">"Juego de tronos"</a></li>
+                        <li><a href="losBarruecos.html">"Los Barruecos"</a></li>
+                        <li><a href="laPatatera.html">"La pedida de la patatera"</a></li>
+                        <li><a href="sanIsidro.html">"San Isidro"</a></li>
+                    </ul>
+                </li>
+                <li>
+                    <a class="menu favoritos" href="#" data-title="Favoritos">
+                        <span>
+                            <span>Favoritos</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu mapa" href="mapa.html" data-title="Mapa">
+                        <span>
+                            <span>Mapa</span>
+                        </span>
+                    </a>
+                </li>
+                <li>
+                    <a class="menu encuesta" href="encuesta.html" data-title="Encuesta">
+                        <span>
+                            <span>Encuesta</span>
+                        </span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+    </header>
+
+    <!-- Contenido principal de la página -->
+    <main>
+
+        <div id="contenedor">
+
+            <form id="formulario" action="prueba.php" method="get" enctype="multipart/form-data" target= "_blank">
+                    
+                <div class="contenedor1">
+                    
+                    <fieldset>
+                    <legend>Datos Personales</legend>
+
+                        <label for="nombre">*Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required placeholder="Nombre" tabindex="1">
+                        
+                        <label for="password">*Indique una contraseña:</label>
+                        <input type="password" id="password" name="password" required tabindex="2">
+
+                        <label for="correo">*Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" required placeholder="ejemplo@gmail.com" tabindex="3">
+
+                        <label for="DNI">*DNI:</label>
+                        <input type="text" id="DNI" name="DNI" placeholder="0000000A" pattern="[0-9]{7}[A-Z]{1}" tabindex="4" required>
+                        
+                        <label for="telefono">Número de teléfono (opcional):</label>
+                        <input type="tel" id="telefono" name="telefono" placeholder="000-00-00-00" pattern="[0-9]{3}-[0-9]{2}-[0-9]{2}-[0-9]{2}" tabindex="5">
+
+                        <label for="fecha">*Fecha de nacimiento:</label>
+                        <input type="date" id="fecha" name="fecha" required tabindex="6">
+                        
+                        <label for="edad">*Indique su edad:</label>
+                        <input type="number" id="edad" name="edad" min="1" max="110" tabindex="7" required placeholder="18">
+
+                </fieldset>
+                    
+                </div>
+                
+                <div class="contenedor2">
+                    
+                    <fieldset>
+                    <legend>¿Cuanto sabes de Malpartida de Cáceres?</legend>
+                        
+                        <label for="pregunta1">Pregunta 1: ¿Qué lugar del pueblo es Monumento Natural?</label>
+                        <select id="pregunta1" name="pregunta1" tabindex="8">
+                            <option></option>
+                            <option value="Nuestra Señora de la Asución">Nuestra Señora de la Asución</option>
+                            <option value="Los Barruecos">Los Barruecos</option>
+                            <option value="El Ayuntamiento">El Ayuntamiento</option>
+                            <option value="Ni idea">Ni idea</option>
+                        </select>
+
+                        <label for="pregunta2">*Pregunta 2: ¿Como se llama nuestro alcalde?</label>
+                        <input type="text" id="pregunta2" name="pregunta2" list="opciones_alcalde" required autocomplete="off" tabindex="9">
+                        <datalist id="opciones_alcalde" name="pregunta2">
+                        <option value="Antonio">Antonio</option>
+                        <option value="Pedro">Pedro</option>
+                        <option value="Lola">Lola</option>
+                        <option value="Carmen">Carmen</option>
+                        <option value="Alfredo">Alfredo</option>
+                        </datalist>
+
+                        <label for="pregunta3">*Pregunta 3: Resume el significado del nombre del pueblo:</label>
+                        <textarea id="pregunta3" name="pregunta3" rows="4" cols="50" required autocomplete="off" tabindex="10"></textarea>
+                        
+                        <label for="color">*Pregunta 4: Indique el color de nuestra bandera:</label>
+                        <input type="color" id="color" name="color" required autocomplete="off" tabindex="11">
+
+                        <label for="pregunta5">Pregunta 5: ¿En que Comunidad autónoma nos encontramos?</label>
+                            
+                        <div id="circulos">
+
+                            <input type="radio" id="Cataluña" name="comunidad" value="Cataluña" tabindex="12">
+                            <label for="Cataluña">Cataluña</label>
+                            <input type="radio" id="Galicia" name="comunidad" value="Galicia">
+                            <label for="Galicia">Galicia</label>
+                            <input type="radio" id="Extremadura" name="comunidad" value="Extremadura">
+                            <label for="Extremadura">Extremadura</label>
+                            <input type="radio" id="Otra" name="comunidad" value="Otra">
+                            <label for="Otra">Otra</label><br><br>
+                        
+                        </div>
+
+                        <label for="pregunta6">*Pregunta 6: ¿A que lugar pertenece esta imagen?</label>
+                        <input type="text" id="pregunta6" name="pregunta6" list="opciones_imagen" required autocomplete="off" tabindex="13">
+                        <datalist id="opciones_imagen">
+                        <option value="A Los Barruecos">
+                        <option value="A Nuestra Señora de la Asución">
+                        <option value="Al Museo Vostell">
+                        <option value="Al Ayuntamiento">
+                        <option value="Otro">
+                        </datalist>
+                        <img id="imagen" src="../imagenes/coche.jpg" alt="Coche" title="¿?">
+
+                    </fieldset>
+                    
+                </div>
+
+                <div class="contenedor3">
+                
+                    <fieldset>
+                    <legend>Valoración de la Página Web</legend>
+
+                    <div class="margen2">
+
+                        <label for="calificacion">*¿Cómo calificarías esta página web? (1-10)</label>
+
+                        <div id="cuadradito">
+
+                            <input type="range" id="calificacion" name="calificacion" min="1" max="10" step="1" oninput="output.value = calificacion.value" required tabindex="14">
+                            <output for="calificacion" id="output">5</output>
+                        
+                        </div>
+
+                        <label for="comentarios">Comentarios:</label>
+                        <textarea id="comentarios" name="comentarios" rows="4" cols="50" placeholder="Comentario/s" tabindex="15"></textarea>
+
+                        <label >*¿Recomendarías la página web a otras personas?</label>
+                        
+                        <div id="circulos">
+
+                            <input type="radio" id="recomendacion-si" name="recomendacion" value="si" required tabindex="16" checked>
+                            <label for="recomendacion-si">Sí</label>
+                            <input type="radio" id="recomendacion-no" name="recomendacion" value="no">
+                            <label for="recomendacion-no">No</label>
+                        
+                        </div>
+
+                        <label for="motivo">*¿Motivo?</label>
+                        <textarea id="motivo" name="motivo" rows="4" cols="50" required placeholder="Motivo/s" tabindex="17"></textarea>
+                        
+                        <label for="visita">¿Visitaría Malpartida de Cáceres?</label>
+                        <select id="visita" name="visita" tabindex="18">
+                            <option value="" selected></option>
+                            <option value="Nunca">Nunca</option>
+                            <option value="Puede">Puede</option>
+                            <option value="Seguro que si">Seguro que sí</option>
+                            <option value="No se">No se</option>
+                        </select>
+                    </div>
+
+                </fieldset>
+
+                </div>
+                
+                <div class="contenedor4">
+                    
+                    <fieldset>
+                    <legend>Preferencias y Opciones</legend>
+
+                        <label for="hora">Indique la hora en la que acabó las preguntas:</label>
+                        <input type="time" id="hora" name="hora" tabindex="19">
+
+                        <label for="mes">Indique el mes en el que se encuentra:</label>
+                        <input type="month" id="mes" name="mes" tabindex="20">
+
+                        <label for="semana">Indique la semana en la que se encuentra:</label>
+                        <input type="week" id="semana" name="semana" tabindex="21">
+                        
+                        <br>
+
+                        <div id="cuadradito">
+
+                            <label for="checkbox">*Aceptar términos y condiciones:</label>
+                            <input type="checkbox" id="checkbox" name="checkbox" value="Terminos" required tabindex="22">
+
+                        </div>
+
+                        <div class="botones">
+
+                            <section>
+                                <label for="submit">Pinche aquí para enviar:</label>
+                                <input type="submit" id="submit" name="submit" tabindex="23">
+                            </section>
+
+                            <section>
+                                <label for="reset">Pinche aquí para borrar:</label>
+                                <input type="reset" id="reset" name="reset" value="Borrar" tabindex="24">
+                            </section>
+
+                        </div>
+                        
+                </fieldset>
+                    
+                </div>
+                
+            </form>
+
+        </div>
+
+    </main>
+
+    <footer>
+
+        <div class="redes-sociales">
+
+            <h3>Síguenos en Redes Sociales</h3>
+
+            <nav>
+                <a href="https://www.facebook.com/malpartidadecaceres" target="_blank">
+                    <img src="../imagenes/boton_facebook.png" alt="Botón de Facebook" title="Dale a Me Guate en Facebook">
+                </a>
+                <a href="https://twitter.com/Malpartida_cc" target="_blank">
+                    <img src="../imagenes/boton_twitter.png" alt="Botón de Twitter" title="Sígueme en Twitter">
+                </a>
+                <a href="https://plus.google.com/u/0/+MalpartidadeC%C3%A1ceres/posts" target="_blank">
+                    <img src="../imagenes/boton_google.png" alt="Botón de Google" title="Añádeme a tus círculos">
+                </a>
+                <a href="https://www.linkedin.com/in/aytomalpartidadecaceres" target="_blank">
+                    <img src="../imagenes/boton_linkedin.png" alt="Botón de Linkedin" title="Contacta conmigo en Linkedin">
+                </a>
+                <a href="http://www.pinterest.com/malpartidacc/" target="_blank">
+                    <img src="../imagenes/boton_pinterest.png" alt="Botón de Pinterest" title="Sígueme en Pinterest">
+                </a>
+                <a href="http://www.youtube.com/channel/UCp-bf36ZuMCjM9Tm2NIQTvg" target="_blank">
+                    <img src="../imagenes/boton_youtube.png" alt="Botón de YouTube" title="Sígueme en YouTube">
+                </a>
+                <a href="https://www.extremadura.com/perfil-de-malpartida-de-caceres" target="_blank">
+                    <img src="../imagenes/boton_extremadura.png" alt="Botón de Extremadura" title="Sígueme en Extremadura.com">
+                </a>
+            </nav>
+
+        </div>
+    
+        <div class="contacto">
+            <h3>Contacto: </h3>
+            <p>Ayuntamiento de Malpartida de Cáceres.</p>
+            <p>Plaza Mayor nº 30 CP: 10910</p>
+            <p>Tlf.: 927 27 50 03</p>
+            <p>Fax: 927 27 61 74</p>
+            <p>Email: alcaldia@malpartidadecaceres.es</p>
+        </div>
+        
+        <hr/>
+            
+        <p>© 2018 Copyright Malpartida de Cáceres.</p>
+
+    </footer>
+
+</body>
+
+</html>

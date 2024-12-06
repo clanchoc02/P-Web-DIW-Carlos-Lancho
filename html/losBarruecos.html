@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Visita Malpartida de Cáceres</title>
+        <link rel="icon" type="image/png" href="../imagenes/logo.png">
+        <link rel="stylesheet" href="../css/losBarruecos.css"> <!-- Enlace al archivo CSS -->
+        <link rel="stylesheet" href="../css/menu.css">
+        <link rel="stylesheet" href="../css/pie.css">
+    </head>
+
+	<body>
+		
+		<!-- Encabezado de la página -->
+        <header class="encabezado">
+
+            <!-- Primera parte del encabezado (registro e idiomas) -->
+            <div id="encabezadoParte1">
+                
+                <!-- Sección para el registro o login -->
+                <div class="seccion1-1">
+                    <a>
+                        <img src="../imagenes/login.png" alt="login.png" id="icono-login">
+                        <span>Registrarse</span>
+                    </a>
+                </div>
+                
+                <!-- Sección para seleccionar idioma -->
+                <div class="seccion1-2">
+                    <!-- Input para seleccionar el idioma -->
+                    <input list="idiomas-lista" id="idiomas" placeholder="Selecciona un idioma">
+                    
+                    <!-- Lista de idiomas disponibles -->
+                    <datalist id="idiomas-lista">
+                        <option value="Español"></option>
+                        <option value="Inglés"></option>
+                        <option value="Francés"></option>
+                        <option value="Alemán"></option>
+                        <option value="Italiano"></option>
+                    </datalist>
+    
+                    <!-- Icono representativo del idioma -->
+                    <label for="idioma-selector" class="seccion1-2">
+                        <img src="../imagenes/idioma.png" alt="idioma.png" id="icono-idiomas">
+                    </label>
+                </div>
+    
+            </div>
+    
+            <!-- Segunda parte del encabezado (logo, título, escudo) -->
+            <div id="encabezadoParte2">
+                <section class="seccion2-1">
+                    <!-- Logo de la página -->
+                    <img id="logo" src="../imagenes/logo.png" alt="logo.png" title="Logo de Malpartida de Cáceres">
+                </section>
+                <section>
+                    <!-- Título principal de la página -->
+                    <h1>Malpartida de Cáceres</h1>
+                </section>
+                <section class="seccion2-2">
+                    <!-- Escudo de la localidad -->
+                    <img id="escudo" src="../imagenes/escudo.png" alt="escudo.png" title="Escudo de Malpartida de Cáceres">
+                </section>
+            </div>
+    
+            <!-- Tercera parte del encabezado (menú y búsqueda) -->
+            <div id="encabezadoParte3">
+    
+                <!-- Botón para abrir el menú -->
+                <div class="seccion3-1">
+                    <label for="menu-checkbox">
+                        <img src="../imagenes/menu.png" alt="Menú" id="icono-menu"> 
+                        <span>Menú</span>
+                    </label>
+                </div>
+    
+                <!-- Campo de búsqueda -->
+                <div class="seccion3-2">
+                    <input type="text" id="cuadro-busqueda" placeholder="Buscar">
+                    <label for="cuadro-busqueda">
+                        <img src="../imagenes/lupa.png" alt="lupa.png" id="icono-lupa">
+                    </label>
+                </div>
+                
+            </div>
+    
+            <!-- Checkbox oculto para controlar el estado del menú -->
+            <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
+    
+            <!-- Submenú de navegación -->
+            <nav class="submenu">
+                <ul>
+                    <li>
+                        <a class="menu inicio" href="index.html" data-title="Inicio">
+                            <span>
+                                <span>Inicio</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu turismo" href="#" data-title="Turismo">
+                            <span>
+                                <span>Turismo</span>
+                            </span>
+                        </a>
+                        <ul id="submenu">
+                            <li><a href="juegoTronos.html">"Juego de tronos"</a></li>
+                            <li><a href="losBarruecos.html">"Los Barruecos"</a></li>
+                            <li><a href="laPatatera.html">"La pedida de la patatera"</a></li>
+                            <li><a href="sanIsidro.html">"San Isidro"</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a class="menu favoritos" href="#" data-title="Favoritos">
+                            <span>
+                                <span>Favoritos</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu mapa" href="mapa.html" data-title="Mapa">
+                            <span>
+                                <span>Mapa</span>
+                            </span>
+                        </a>
+                    </li>
+                    <li>
+                        <a class="menu encuesta" href="encuesta.html" data-title="Encuesta">
+                            <span>
+                                <span>Encuesta</span>
+                            </span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+    
+        </header>
+		
+        <!-- Contenido principal de la página -->
+        <main>
+
+            <img id="imagen1" src="../imagenes/carrusel2.jpg" alt="Monumento natural «Los Barruecos»" title="Monumento natural «Los Barruecos»">
+
+            <div class="los_barruecos" id="ver_los_barruecos">
+                
+                <h2>Monumento natural «Los Barruecos»</h2>
+
+                <div id="atardecer">
+                
+                    <img src="../imagenes/los_barruecos1.jpg" alt="Atardecer en los Barruecos" title="Atardecer en los Barruecos">
+                
+                    <p>Atardecer en Los Barruecos</p>
+                
+                </div>
+
+                <p>Malpartida se sitúa en la zona pseudoesteparia de los alrededores de Cáceres, un medio dominado por el llano que custodia importantes 
+                especies amenazadas como el sisón, la avutarda o el cernícalo primilla.</p>
+                
+                <p>La afloraciones del batolito granítico sobre el que se asienta Malpartida proporciona al paisaje plano una serie de 'islas' donde la fauna y la 
+                flora encuentran un refugio que permite su presencia en todo el espacio. Este fenómeno se potencia con la existencia de charcas y pozos 
+                que aprovechan las cualidades de los suelos graníticos para almacenar agua, lo cual contrarresta los períodos de sequía estival y permite 
+                una explosión de vida natural que no puede menos que impresionarnos.</p>
+                
+                <p>La mayor, y más sorprendente, de estas 'islas-refugio' lo constituye el Monumento Natural de Los Barruecos que presenta un paisaje 
+                espectacular dominado por grandes bolos graníticos, esculpidos por los agentes erosivos durante miles de años. Las caprichosas formas 
+                resultantes presentan el más extenso catálogo de modelado sobre granito, lo cual ha atraído la atención de geólogos y geomorfólogos de 
+                todo el mundo.</p>
+
+                <section class="articulo1">
+                
+                    <div class="texto1">
+                        
+                        <p>El paisaje se completa con la presencia de cuatro embalses 
+                        históricos, en cuyas aguas se reflejan las formas graníticas 
+                        creando la sensación de un paisaje ilusorio.</p>
+
+                        <p>La conjunción del refugio proporcionado por las rocas y la 
+                        abundancia de agua durante todo el año son también un excelente 
+                        reclamo para la fauna y la flora. Al lado de los arbustos como los 
+                        codesos (Adenocarpus complicatus) y la retama blanca (Citisus 
+                        multiflorus) encontramos pies sueltos de encinas (Quercus 
+                        rotundifolia), alcornoques (Quercus suber), piruétanos (Pirus 
+                        bourguaeana) almeces (Celtis australis) acebuches (Olea europea) o 
+                        sauces (Salix alba) agrupados éstos en las abundantes zonas 
+                        húmedas.</p>
+
+                        <p>La fauna es muy variada, encontrando ejemplares de rapaces que 
+                        se desplazan a Los Barruecos atraídos por la abundancia de agua y 
+                        alimento: podemos disfrutar reinando sobre el cielo del paraje de 
+                        las siluetas del águila culebrera (Circaetus gallinatus), el águila 
+                        calzada (Hieraetus pennatus) milano real (Milvus milvus)...</p>
+                    
+                    </div>
+                    
+                    <div class="imagen2">
+                        
+                        <img src="../imagenes/los_barruecos2.jpg" alt="Charca-del-Barrueco-de-Abajo" title="Charca-del-Barrueco-de-Abajo">
+                    
+                        <p>Charca del Barrueco de Abajo</p>
+                        
+                    </div>
+
+                </section>
+                
+                <section class="articulo2">
+
+                    <div class="imagen3">
+                        
+                        <article>
+                            <img src="../imagenes/los_barruecos3.jpg" alt="Ruta-de-los-Sentidos" title="Ruta-de-los-Sentidos">
+                            <p>Ruta de los Sentidos</p>
+                        </article>
+
+                        <article>
+                            <img src="../imagenes/los_barruecos4.jpg" alt="Charca-del-Barrueco-de-Arriba" title="Charca-del-Barrueco-de-Arriba">
+                            <p>Charca del Barrueco de Arriba</p>
+                        </article>
+
+                    </div>
+
+                    <div class="texto2">
+                        
+                        <p>Como es lógico también abundan las aves acuáticas, como el 
+                        ánade real (Anas platyrhynchos), el somormujo lavanco (Podiceps 
+                        cristatus), la garza real (Ardea cinerea), el zampullín chico 
+                        (Tachybaptus ruficolis). Sin olvidar el lagarto ocelado (Lacerta 
+                        lepida), el galápago leproso (Mauremys caspica) o la nutria (Lutra 
+                        lutra).</p>
+
+                        <p>Por sus peculiaridades es especialmente significativa en 
+                        el Monumento Natural de Los Barruecos la cigüeña blanca (Ciconia 
+                        ciconia) y la tenca (Tinca tinca), esta última como especie con la que 
+                        se repueblan las charcas para la práctica de la pesca deportiva 
+                        entre mayo y septiembre, que está muy arraigada en la población. 
+                        En cuanto a la colonia de cigüeña blanca tiene tal importancia que 
+                        ha sido considerada la mayor de Europa en estadoActual natural, 
+                        anidando sobre los grandes bolos graníticos. La peculiaridad de la 
+                        colonia de Los Barruecos, unida a la extensa colonia urbana 
+                        asentada en la población y los esfuerzos del Ayuntamiento por la 
+                        conservación de este ave y su hábitat, le valió a Malpartida de 
+                        Cáceres el nombramiento de Pueblo Europeo de la Cigüeña en 
+                        1997, por el Fondo Patrimonio Natural Europeo (EURONATUR).</p>
+
+                        <p>No podemos obviar que Los Barruecos es un paisaje antrópico, 
+                        dónde la actividad humana ha sido decisiva desde tiempos 
+                        prehistóricos. Testigo de ello son los abundantes yacimientos 
+                        arqueológicos que prueban el aprovechamiento de las magníficas 
+                        condiciones del paraje ya en el Paleolítico. Del Calcolítico se datan 
+                        poblamientos amurallados y el conjunto de grabados y pinturas 
+                        esquemáticas, durante la época romana se construye un poblado 
+                        tardo romano -asociada a la colonia Norba Caesarina- y en sus 
+                        inmediaciones conjuntos de tumbas antropomorfas.</p>
+                    
+                    </div>
+                
+                </section>
+
+            </div>
+
+        </main>
+
+        <footer>
+
+            <div class="redes-sociales">
+
+                <h3>Síguenos en Redes Sociales</h3>
+
+                <nav>
+                    <a href="https://www.facebook.com/malpartidadecaceres" target="_blank">
+                        <img src="../imagenes/boton_facebook.png" alt="Botón de Facebook" title="Dale a Me Guate en Facebook">
+                    </a>
+                    <a href="https://twitter.com/Malpartida_cc" target="_blank">
+                        <img src="../imagenes/boton_twitter.png" alt="Botón de Twitter" title="Sígueme en Twitter">
+                    </a>
+                    <a href="https://plus.google.com/u/0/+MalpartidadeC%C3%A1ceres/posts" target="_blank">
+                        <img src="../imagenes/boton_google.png" alt="Botón de Google" title="Añádeme a tus círculos">
+                    </a>
+                    <a href="https://www.linkedin.com/in/aytomalpartidadecaceres" target="_blank">
+                        <img src="../imagenes/boton_linkedin.png" alt="Botón de Linkedin" title="Contacta conmigo en Linkedin">
+                    </a>
+                    <a href="http://www.pinterest.com/malpartidacc/" target="_blank">
+                        <img src="../imagenes/boton_pinterest.png" alt="Botón de Pinterest" title="Sígueme en Pinterest">
+                    </a>
+                    <a href="http://www.youtube.com/channel/UCp-bf36ZuMCjM9Tm2NIQTvg" target="_blank">
+                        <img src="../imagenes/boton_youtube.png" alt="Botón de YouTube" title="Sígueme en YouTube">
+                    </a>
+                    <a href="https://www.extremadura.com/perfil-de-malpartida-de-caceres" target="_blank">
+                        <img src="../imagenes/boton_extremadura.png" alt="Botón de Extremadura" title="Sígueme en Extremadura.com">
+                    </a>
+                </nav>
+
+            </div>
+        
+            <div class="contacto">
+                <h3>Contacto: </h3>
+                <p>Ayuntamiento de Malpartida de Cáceres.</p>
+                <p>Plaza Mayor nº 30 CP: 10910</p>
+                <p>Tlf.: 927 27 50 03</p>
+                <p>Fax: 927 27 61 74</p>
+                <p>Email: alcaldia@malpartidadecaceres.es</p>
+            </div>
+            
+            <hr/>
+                
+            <p>© 2018 Copyright Malpartida de Cáceres.</p>
+
+        </footer>
+		
+	</body>
+	
+</html>

@@ -1,0 +1,257 @@
+/* Configuración global para eliminar márgenes y paddings por defecto */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Incluye bordes y padding en el tamaño total */
+}
+
+/* Estilo general del body */
+body {
+    /* Fondo de la página (imagen comentada y color de fondo) */
+    /*background-image: url(../imagenes/fondo.png);*/
+    background-color: #393333; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    display: flex; /* Contenedor flexible */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
+}
+
+/* Estilo para el contenedor del carrusel */
+.carrusel {
+    max-width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Ajusta automáticamente la altura */
+    padding: 0; /* Sin espaciado interno */
+    border: none; /* Sin borde */
+    z-index: 0; /* Coloca detrás de otros elementos */
+}
+
+/* Iframe dentro del carrusel */
+.carrusel iframe {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    max-width: 100vw; /* Evita desbordamientos horizontales */
+    height: 600px; /* Altura fija */
+    border: none; /* Sin borde */
+    margin: 0; /* Sin margen */
+    padding: 0; /* Sin espaciado interno */
+    display: block; /* Mostrar como bloque */
+    object-fit: cover; /* Ajusta el contenido del iframe para cubrir el espacio */
+}
+
+/* Contenedor principal que agrupa galería y tabla */
+#contenedor-principal {
+    display: flex; /* Contenedor flexible */
+    justify-content: center; /* Espacio igual entre galería y tabla */
+    align-items: center; /* Centrado vertical */
+    gap: 40px; /* Espaciado entre los elementos */
+    padding: 1%; /* Espaciado interno */
+    flex-wrap: wrap; /* Permite reorganizar elementos en pantallas pequeñas */
+}
+
+/* Contenedor para la tabla */
+#contendor-tabla {
+    max-width: 25%; /* La tabla ocupa el 25% del ancho principal */
+    background-color: #282828; /* Fondo gris oscuro */
+    border: 4px double #ADD8E6; /* Borde doble azul claro */
+    border-radius: 10px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para realce */
+}
+
+/* Estilo para la tabla */
+.tabla {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    border-spacing: 0; /* Sin espacios entre celdas */
+    border-collapse: collapse; /* Unir bordes */
+    background-color: #333333; /* Fondo oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    font-size: 14px; /* Tamaño del texto */
+    margin-right: 20%; /* Separación lateral */
+}
+
+/* Título de la tabla */
+.tabla h2 {
+    white-space: nowrap; /* Evita que el texto se corte en varias líneas */
+    color: #C0C0C0; /* Texto gris claro */
+    margin: 0; /* Sin margen */
+    text-align: center; /* Centra el título */
+}
+
+/* Primera fila de la tabla */
+.tabla tr:first-child td table tr th {
+    border: none; /* Sin borde en las celdas */
+}
+
+/* Imágenes dentro de la tabla */
+.tabla img {
+    max-width: 90%; /* Reduce ligeramente el tamaño máximo */
+    height: auto; /* Ajusta la altura automáticamente */
+    border-radius: 5px; /* Bordes redondeados */
+    margin: 5px 0; /* Margen superior e inferior */
+}
+
+/* Celdas de la tabla */
+.tabla th, .tabla td {
+    padding: 10px; /* Espaciado interno en celdas */
+    border: 1px solid #444; /* Bordes finos y oscuros */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo para títulos dentro de la tabla */
+.titulos {
+    background-color: #444; /* Fondo gris oscuro */
+    font-weight: bold; /* Texto en negrita */
+    text-decoration: underline; /* Subraya el texto */
+    color: #4682B4; /* Texto azul claro */
+    padding: 8px; /* Espaciado interno */
+    text-align: center; /* Centra el texto */
+}
+
+/* Estilo para encabezados de tabla */
+.table-header {
+    background-color: #555; /* Fondo ligeramente más oscuro */
+    color: white; /* Texto blanco */
+}
+
+/* Filas impares entre la 6ª y 16ª fila de la tabla */
+table tr:nth-child(odd):nth-child(n+6):nth-child(-n+16) {
+    background-color: #383838; /* Fondo gris claro */
+}
+
+/* Estilo para filas pares entre la 6ª y 16ª fila de la tabla */
+table tr:nth-child(even):nth-child(n+6):nth-child(-n+16) {
+    background-color: #2b2b2b; /* Fondo gris oscuro */
+}
+
+/* Estilo para la primera celda de las filas entre la 6ª y 16ª fila */
+tr:nth-child(n+6):nth-child(-n+16) td:nth-child(1) {
+    color: #00B050; /* Texto en verde */
+}
+
+/* Estilo general para enlaces dentro de la tabla */
+table a {
+    color: #5F9EA0; /* Color azul verdoso */
+    text-decoration: none; /* Sin subrayado por defecto */
+}
+
+/* Estilo para enlaces al pasar el ratón */
+table a:hover {
+    text-decoration: underline; /* Subrayado en hover */
+}
+
+/* Estilo para imágenes dentro de celdas de la tabla */
+.tabla td img {
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Sombra sutil */
+}
+
+/* Contenedor de la galería */
+.galeria {
+    display: grid; /* Configuración en cuadrícula */
+    grid-template-columns: repeat(1, 1fr); /* Una sola columna */
+    gap: 20px; /* Espacio entre elementos de la cuadrícula */
+    max-width: 37%; /* Ocupa el 37% del ancho del contenedor principal */
+    padding: 20px; /* Espaciado interno */
+}
+
+/* Elementos individuales dentro de la galería */
+.galeria-item {
+    position: relative; /* Posicionamiento relativo para superponer contenido */
+    overflow: hidden; /* Oculta contenido desbordante */
+    border-radius: 10px; /* Bordes redondeados */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Transiciones suaves */
+}
+
+/* Efecto hover en elementos de la galería */
+.galeria-item:hover {
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+}
+
+/* Imágenes dentro de los elementos de la galería */
+.galeria-item img {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    height: auto; /* Ajusta automáticamente la altura */
+    display: block; /* Mostrar como bloque */
+    transition: opacity 0.3s ease; /* Transición suave para la opacidad */
+}
+
+/* Efecto hover en imágenes de la galería */
+.galeria-item:hover img {
+    opacity: 0.85; /* Reduce ligeramente el brillo */
+}
+
+/* Títulos superpuestos dentro de los elementos de la galería */
+.galeria-item h3 {
+    position: absolute; /* Posicionamiento absoluto dentro del elemento */
+    bottom: 10%; /* Ubicación a 10% del borde inferior */
+    left: 50%; /* Centra horizontalmente */
+    transform: translateX(-50%); /* Ajuste horizontal para centrado */
+    color: white; /* Texto blanco */
+    font-size: 1.5em; /* Tamaño del texto */
+    text-align: center; /* Centra el texto */
+    text-shadow: 0 2px 4px rgba(0, 0, 0, 0.8); /* Sombra para mejorar legibilidad */
+    pointer-events: none; /* Evita interacción con el texto */
+}
+
+/* Responsividad para pantallas medianas (tablets) */
+@media (max-width: 1024px) {
+    #contenedor-principal {
+        flex-direction: column; /* Reorganizar elementos en columna */
+        align-items: center; /* Centrar horizontalmente los elementos */
+        gap: 20px; /* Reducir el espacio entre elementos */
+    }
+
+    .galeria {
+        max-width: 80%; /* La galería ocupa el 80% del ancho */
+        grid-template-columns: 1fr 1fr; /* Dos columnas para mantener un buen diseño */
+        gap: 15px; /* Ajustar el espaciado */
+    }
+
+    #contendor-tabla {
+        max-width: 50%; /* La tabla ocupa casi todo el ancho */
+        margin-bottom: 15px; /* Añadir espacio inferior */
+    }
+
+    .tabla {
+        font-size: 12px; /* Reducir ligeramente el tamaño del texto en la tabla */
+    }
+
+    .tabla h2 {
+        font-size: 16px; /* Reducir el tamaño del encabezado */
+    }
+
+    .carrusel iframe {
+        height: 400px; /* Ajustar la altura del iframe para pantallas medianas */
+        object-fit: cover; /* Mantener proporción */
+    }
+
+    .galeria-item h3 {
+        font-size: 1.2em; /* Reducir el tamaño del texto en los títulos de la galería */
+    }
+}
+
+
+/* Responsividad para pantallas pequeñas */
+@media (max-width: 768px) {
+    #contenedor-principal {
+        flex-direction: column; /* Reorganizar elementos en columna */
+        align-items: center; /* Centrar horizontalmente los elementos */
+    }
+
+    .galeria {
+        max-width: 100%; /* La galería ocupa todo el ancho */
+        grid-template-columns: 1fr; /* Una sola columna */
+    }
+
+    #contendor-tabla {
+        max-width: 90%; /* La tabla ocupa todo el ancho */
+        margin-bottom: 20px; /* Añadir espacio inferior */
+    }
+
+    .carrusel iframe {
+        height: 300px; /* Reducir la altura del iframe */
+        object-fit: cover; /* Asegurarse de que el contenido se vea bien */
+    }
+
+}
