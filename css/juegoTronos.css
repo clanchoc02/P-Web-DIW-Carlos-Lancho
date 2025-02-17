@@ -8,9 +8,6 @@ body {
     margin: 0px; /* Elimina margen por defecto */
     background-color: #393333; /* Fondo oscuro */
     color: white; /* Texto blanco */
-    display: flex; /* Contenedor flexible */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
 }
 
 /* Título principal */
@@ -103,6 +100,7 @@ button a {
 
 /* --- Responsividad para pantallas medianas (máximo 1024px) --- */
 @media (max-width: 1024px) {
+    
     /* Ajuste de los artículos dentro del contenedor */
     .articulo1 article {
         flex: 1 1 30%; /* Cada artículo ocupa el 30% del ancho */

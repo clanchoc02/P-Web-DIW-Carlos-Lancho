@@ -9,11 +9,8 @@
 body {
     /* Fondo de la página (imagen comentada y color de fondo) */
     /*background-image: url(../imagenes/fondo.png);*/
-    background-color: #393333; /* Fondo oscuro */
+    background-color: #393333 ; /* Fondo oscuro */
     color: white; /* Texto blanco */
-    display: flex; /* Contenedor flexible */
-    justify-content: center; /* Centra el contenido horizontalmente */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
 }
 
 /* Estilo para el contenedor del carrusel */
@@ -47,13 +44,18 @@ body {
     flex-wrap: wrap; /* Permite reorganizar elementos en pantallas pequeñas */
 }
 
+div.localscroll {
+    overflow-x: auto;
+    width: 100%;
+}
+
 /* Contenedor para la tabla */
 #contendor-tabla {
     max-width: 25%; /* La tabla ocupa el 25% del ancho principal */
     background-color: #282828; /* Fondo gris oscuro */
     border: 4px double #ADD8E6; /* Borde doble azul claro */
     border-radius: 10px; /* Bordes redondeados */
-    padding: 15px; /* Espaciado interno */
+    padding: 1%; /* Espaciado interno */
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5); /* Sombra para realce */
 }
 
@@ -65,7 +67,6 @@ body {
     background-color: #333333; /* Fondo oscuro */
     color: #FFFFFF; /* Texto blanco */
     font-size: 14px; /* Tamaño del texto */
-    margin-right: 20%; /* Separación lateral */
 }
 
 /* Título de la tabla */
@@ -83,10 +84,14 @@ body {
 
 /* Imágenes dentro de la tabla */
 .tabla img {
-    max-width: 90%; /* Reduce ligeramente el tamaño máximo */
+    max-width: 80%; /* Reduce ligeramente el tamaño máximo */
     height: auto; /* Ajusta la altura automáticamente */
     border-radius: 5px; /* Bordes redondeados */
     margin: 5px 0; /* Margen superior e inferior */
+}
+
+.escudo_tabla {
+    width: 60%;
 }
 
 /* Celdas de la tabla */
@@ -194,6 +199,33 @@ table a:hover {
     pointer-events: none; /* Evita interacción con el texto */
 }
 
+#resultados-busqueda {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 200px;
+    z-index: 1000;
+    margin-top: 5px;
+}
+
+#resultados-busqueda ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#resultados-busqueda li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#resultados-busqueda li:hover {
+    background-color: #f0f0f0;
+}
+
+
 /* Responsividad para pantallas medianas (tablets) */
 @media (max-width: 1024px) {
     #contenedor-principal {
@@ -219,6 +251,14 @@ table a:hover {
 
     .tabla h2 {
         font-size: 16px; /* Reducir el tamaño del encabezado */
+    }
+
+    .logotipo_tabla {
+        width: 70%;
+    }
+    
+    .escudo_tabla {
+        width: 40%;
     }
 
     .carrusel iframe {
@@ -252,6 +292,14 @@ table a:hover {
     .carrusel iframe {
         height: 300px; /* Reducir la altura del iframe */
         object-fit: cover; /* Asegurarse de que el contenido se vea bien */
+    }
+
+    .logotipo_tabla {
+        width: 40%;
+    }
+
+    .escudo_tabla {
+        width: 25%;
     }
 
 }

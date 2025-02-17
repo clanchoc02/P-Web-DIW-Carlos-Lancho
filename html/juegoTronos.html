@@ -4,237 +4,253 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Visita Malpartida de Cáceres</title>
-        <link rel="icon" type="image/png" href="../imagenes/logo.png">
+        <link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico">
         <link rel="stylesheet" href="../css/menu.css">
         <link rel="stylesheet" href="../css/juegoTronos.css"> <!-- Enlace al archivo CSS -->
         <link rel="stylesheet" href="../css/pie.css">
+        <script defer src="../js/idiomas.js"></script>
     </head>
 
 	<body>
 		
 		<!-- Encabezado de la página -->
         <header class="encabezado">
-
-            <!-- Primera parte del encabezado (registro e idiomas) -->
+            <!-- Primera parte del encabezado: Login y selector de idioma -->
             <div id="encabezadoParte1">
-                
-                <!-- Sección para el registro o login -->
                 <div class="seccion1-1">
+                    <!-- Botón de login -->
                     <a>
                         <img src="../imagenes/login.png" alt="login.png" id="icono-login">
-                        <span>Registrarse</span>
+                        <span data-translate="registrarse">Registrarse</span>
                     </a>
                 </div>
-                
-                <!-- Sección para seleccionar idioma -->
                 <div class="seccion1-2">
-                    <!-- Input para seleccionar el idioma -->
-                    <input list="idiomas-lista" id="idiomas" placeholder="Selecciona un idioma">
-                    
-                    <!-- Lista de idiomas disponibles -->
+                    <!-- Selector de idioma con datalist -->
+                    <input list="idiomas-lista" id="idiomas" placeholder="Selecciona un idioma" data-translate="selecciona_idioma">
                     <datalist id="idiomas-lista">
                         <option value="Español"></option>
                         <option value="Inglés"></option>
                         <option value="Francés"></option>
-                        <option value="Alemán"></option>
-                        <option value="Italiano"></option>
                     </datalist>
-    
-                    <!-- Icono representativo del idioma -->
                     <label for="idioma-selector" class="seccion1-2">
                         <img src="../imagenes/idioma.png" alt="idioma.png" id="icono-idiomas">
                     </label>
                 </div>
-    
             </div>
-    
-            <!-- Segunda parte del encabezado (logo, título, escudo) -->
+        
+            <!-- Segunda parte del encabezado: Logo, título y escudo -->
             <div id="encabezadoParte2">
                 <section class="seccion2-1">
-                    <!-- Logo de la página -->
-                    <img id="logo" src="../imagenes/logo.png" alt="logo.png" title="Logo de Malpartida de Cáceres">
+                    <!-- Logo de Malpartida de Cáceres -->
+                    <img id="logo" src="../imagenes/Logotipo2.jpg" alt="logo.png" title="Logo de Malpartida de Cáceres">
                 </section>
                 <section>
-                    <!-- Título principal de la página -->
-                    <h1>Malpartida de Cáceres</h1>
+                    <!-- Título principal del sitio -->
+                    <h1 data-translate="bienvenido">Bienvenido a Malpartida de Cáceres</h1>
                 </section>
                 <section class="seccion2-2">
-                    <!-- Escudo de la localidad -->
+                    <!-- Escudo del municipio -->
                     <img id="escudo" src="../imagenes/escudo.png" alt="escudo.png" title="Escudo de Malpartida de Cáceres">
                 </section>
             </div>
-    
-            <!-- Tercera parte del encabezado (menú y búsqueda) -->
+        
+            <!-- Tercera parte del encabezado: Menú y búsqueda -->
             <div id="encabezadoParte3">
-    
-                <!-- Botón para abrir el menú -->
                 <div class="seccion3-1">
+                    <!-- Icono y botón del menú desplegable -->
                     <label for="menu-checkbox">
-                        <img src="../imagenes/menu.png" alt="Menú" id="icono-menu"> 
-                        <span>Menú</span>
+                        <img src="../imagenes/menu.png" alt="Menú" id="icono-menu">
+                        <span data-translate="menu">Menú</span>
                     </label>
                 </div>
-    
-                <!-- Campo de búsqueda -->
                 <div class="seccion3-2">
-                    <input type="text" id="cuadro-busqueda" placeholder="Buscar">
+                    <!-- Cuadro de búsqueda -->
+                    <input type="text" id="cuadro-busqueda" placeholder="Buscar" data-translate="buscar">
                     <label for="cuadro-busqueda">
                         <img src="../imagenes/lupa.png" alt="lupa.png" id="icono-lupa">
                     </label>
                 </div>
-                
             </div>
-    
-            <!-- Checkbox oculto para controlar el estado del menú -->
+        
+            <!-- Checkbox oculto para el control del menú desplegable -->
             <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
-    
-            <!-- Submenú de navegación -->
+        
+            <!-- Navegación del submenú -->
             <nav class="submenu">
                 <ul>
+                    <!-- Enlace al inicio -->
                     <li>
                         <a class="menu inicio" href="index.html" data-title="Inicio">
                             <span>
-                                <span>Inicio</span>
+                                <span data-translate="inicio">Inicio</span>
                             </span>
                         </a>
                     </li>
+                    <!-- Enlace al turismo con submenú -->
                     <li>
                         <a class="menu turismo" href="#" data-title="Turismo">
                             <span>
-                                <span>Turismo</span>
+                                <span data-translate="turismo">Turismo</span>
                             </span>
                         </a>
                         <ul id="submenu">
-                            <li><a href="juegoTronos.html">"Juego de tronos"</a></li>
-                            <li><a href="losBarruecos.html">"Los Barruecos"</a></li>
-                            <li><a href="laPatatera.html">"La pedida de la patatera"</a></li>
-                            <li><a href="sanIsidro.html">"San Isidro"</a></li>
+                            <li><a href="juegoTronos.html" data-translate="juego_tronos_titulo">"Juego de Tronos"</a></li>
+                            <li><a href="losBarruecos.html" data-translate="los_barruecos_titulo">"Los Barruecos"</a></li>
+                            <li><a href="laPatatera.html" data-translate="la_patatera_titulo">"La pedida de la patatera"</a></li>
+                            <li><a href="sanIsidro.html" data-translate="san_isidro_titulo">"San Isidro"</a></li>
                         </ul>
                     </li>
+                    <!-- Enlace a favoritos -->
                     <li>
                         <a class="menu favoritos" href="#" data-title="Favoritos">
                             <span>
-                                <span>Favoritos</span>
+                                <span data-translate="favoritos">Favoritos</span>
                             </span>
                         </a>
                     </li>
+                    <!-- Enlace al mapa -->
                     <li>
                         <a class="menu mapa" href="mapa.html" data-title="Mapa">
                             <span>
-                                <span>Mapa</span>
+                                <span data-translate="mapa">Mapa</span>
                             </span>
                         </a>
                     </li>
+                    <!-- Enlace a la encuesta -->
                     <li>
                         <a class="menu encuesta" href="encuesta.html" data-title="Encuesta">
                             <span>
-                                <span>Encuesta</span>
+                                <span data-translate="encuesta">Encuesta</span>
                             </span>
                         </a>
                     </li>
                 </ul>
             </nav>
-    
         </header>
 		
         <main>
 
+            <!-- Imagen destacada de Juego de Tronos -->
             <img id="imagen1" src="../imagenes/juego_de_tronos1.jpg" alt="JUEGO DE TRONOS" title="JUEGO DE TRONOS">
-
+        
+            <!-- Sección principal sobre Juego de Tronos -->
             <div class="juego_tronos" id="ver_juego_tronos">
-                    
-                <h2>Juego de tronos</h2>
                 
-                <p>El espectacular paisaje del Monumento Natural de Los Barruecos fue elegido por la productora HBO  como uno de los escenarios de la 7ª 
-                temporada de Juego de Tronos. Entre Noviembre y Diciembre de 2016 se rodó en el paraje del Barrueco de Arriba  la batalla con mayor 
-                despliegue técnico de la historia de la Televisión.</p>
-
-                <p>El resultado: 24 minutos de acción que se emitieron en el verano de 2017, entre el 4º y el 5º capítulo de la 7ª temporada. La 
-                espectacular batalla se desarrolla cuando los ejércitos Lannister y Tarly son emboscados por las hordas Dothraki. El ataque de Drogon, 
-                dirigido por Daenerys Targaryen (Khaleesi),  convertirá la lucha en un campo de fuego.</p>
-
-                <p>En el lugar de la localización se han instalado cuatro paneles, en los que se describe el rodaje   de las escenas más representativas 
-                en sus propios escenarios naturales. </p>
+                <!-- Título de la sección -->
+                <h2 data-translate="juego_tronos_titulo_pagina">Juego de tronos</h2>
                 
+                <!-- Descripción de la localización del rodaje -->
+                <p data-translate="juego_tronos_descripcion1">El espectacular paisaje del Monumento Natural de Los Barruecos fue elegido por la productora HBO como uno de los escenarios de la 7ª temporada de Juego de Tronos. Entre Noviembre y Diciembre de 2016 se rodó en el paraje del Barrueco de Arriba la batalla con mayor despliegue técnico de la historia de la Televisión.</p>
+        
+                <p data-translate="juego_tronos_descripcion2">El resultado: 24 minutos de acción que se emitieron en el verano de 2017, entre el 4º y el 5º capítulo de la 7ª temporada. La espectacular batalla se desarrolla cuando los ejércitos Lannister y Tarly son emboscados por las hordas Dothraki. El ataque de Drogon, dirigido por Daenerys Targaryen (Khaleesi), convertirá la lucha en un campo de fuego.</p>
+        
+                <p data-translate="juego_tronos_descripcion3">En el lugar de la localización se han instalado cuatro paneles, en los que se describe el rodaje de las escenas más representativas en sus propios escenarios naturales.</p>
+                
+                <!-- Sección con artículos relacionados -->
                 <section class="articulo1">
-
+        
                     <article>
-                
+                        <!-- Imagen del rodaje -->
                         <img src="../imagenes/juego_de_tronos2.jpg" alt="Rodaje Juego de Tronos. (Macall B. Polay - HBO)" title="Rodaje Juego de Tronos. (Macall B. Polay - HBO)">
-                    
-                        <p>Rodaje Juego de Tronos. (Macall B. Polay - HBO)</p>
-                
+                        <p data-translate="juego_tronos_rodaje">Rodaje Juego de Tronos. (Macall B. Polay - HBO)</p>
                     </article>
                 
                     <article>
-                    
+                        <!-- Imagen de los paneles informativos -->
                         <img src="../imagenes/juego_de_tronos3.jpg" alt="Paneles de Juego de Tronos" title="Paneles de Juego de Tronos">
-                    
-                        <p>Paneles de Juego de Tronos</p>
-                    
+                        <p data-translate="juego_tronos_paneles">Paneles de Juego de Tronos</p>
                     </article>
-
+        
                 </section>
-
+        
+                <!-- Botón con enlace al folleto -->
                 <section class="boton">
-                
                     <button>
-                        
-                        <a href="https://www.malpartidadecaceres.es/images/2019/01/Folleto-Escenarios-Juego-de-Tronos-.pdf" target="_blank">Folleto del Escenario de Juego de Tronos</a>
-                        
+                        <a href="https://www.malpartidadecaceres.es/images/2019/01/Folleto-Escenarios-Juego-de-Tronos-.pdf" target="_blank" data-translate="juego_tronos_folleto">Folleto del Escenario de Juego de Tronos</a>
                     </button>
-
                 </section>
                 
             </div>
-
-        </main>
+        
+        </main>        
 		
-		<footer>
+		<!--Pie de la página-->
+        <footer>
 
+            <!-- Sección de redes sociales -->
             <div class="redes-sociales">
-
-                <h3>Síguenos en Redes Sociales</h3>
-
+        
+                <!-- Título de la sección de redes sociales -->
+                <h3 data-translate="redes_sociales">Síguenos en Redes Sociales</h3>
+        
+                <!-- Navegación con enlaces a las redes sociales -->
                 <nav>
+                    <!-- Enlace a Facebook -->
                     <a href="https://www.facebook.com/malpartidadecaceres" target="_blank">
                         <img src="../imagenes/boton_facebook.png" alt="Botón de Facebook" title="Dale a Me Guate en Facebook">
                     </a>
+                    <!-- Enlace a Twitter -->
                     <a href="https://twitter.com/Malpartida_cc" target="_blank">
                         <img src="../imagenes/boton_twitter.png" alt="Botón de Twitter" title="Sígueme en Twitter">
                     </a>
+                    <!-- Enlace a Google+ -->
                     <a href="https://plus.google.com/u/0/+MalpartidadeC%C3%A1ceres/posts" target="_blank">
                         <img src="../imagenes/boton_google.png" alt="Botón de Google" title="Añádeme a tus círculos">
                     </a>
+                    <!-- Enlace a LinkedIn -->
                     <a href="https://www.linkedin.com/in/aytomalpartidadecaceres" target="_blank">
                         <img src="../imagenes/boton_linkedin.png" alt="Botón de Linkedin" title="Contacta conmigo en Linkedin">
                     </a>
+                    <!-- Enlace a Pinterest -->
                     <a href="http://www.pinterest.com/malpartidacc/" target="_blank">
                         <img src="../imagenes/boton_pinterest.png" alt="Botón de Pinterest" title="Sígueme en Pinterest">
                     </a>
+                    <!-- Enlace a YouTube -->
                     <a href="http://www.youtube.com/channel/UCp-bf36ZuMCjM9Tm2NIQTvg" target="_blank">
                         <img src="../imagenes/boton_youtube.png" alt="Botón de YouTube" title="Sígueme en YouTube">
                     </a>
+                    <!-- Enlace a Extremadura.com -->
                     <a href="https://www.extremadura.com/perfil-de-malpartida-de-caceres" target="_blank">
                         <img src="../imagenes/boton_extremadura.png" alt="Botón de Extremadura" title="Sígueme en Extremadura.com">
                     </a>
                 </nav>
-
+        
             </div>
         
+            <!-- Sección de contacto -->
             <div class="contacto">
-                <h3>Contacto: </h3>
-                <p>Ayuntamiento de Malpartida de Cáceres.</p>
-                <p>Plaza Mayor nº 30 CP: 10910</p>
-                <p>Tlf.: 927 27 50 03</p>
-                <p>Fax: 927 27 61 74</p>
-                <p>Email: alcaldia@malpartidadecaceres.es</p>
+                <!-- Título de la sección de contacto -->
+                <h3 data-translate="contacto">Contacto: </h3>
+                <!-- Información del contacto -->
+                <p data-translate="direccion">Ayuntamiento de Malpartida de Cáceres.</p>
+                <p data-translate="plaza">Plaza Mayor nº 30 CP: 10910</p>
+                <p data-translate="telefono_pie">Tlf.: 927 27 50 03</p>
+                <p data-translate="fax">Fax: 927 27 61 74</p>
+                <p data-translate="email">Email: alcaldia@malpartidadecaceres.es</p>
             </div>
             
+            <!-- Separador horizontal -->
             <hr/>
                 
-            <p>© 2018 Copyright Malpartida de Cáceres.</p>
-
+            <!-- Texto de la licencia de creativecommons -->
+            <section class="licencia">
+                <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title"
+                        rel="cc:attributionURL" href="https://clanchoc02.github.io/P-Web-DIW-Carlos-Lancho/html/index.html">Malpartida
+                        de Cáceres</a><span data-translate="licencia1"> por </span><span property="cc:attributionName">Carlos Lancho Cuadrado</span><span data-translate="licencia2">
+                        está licenciado bajo </span><a
+                        href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank"
+                        rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+            
+                </section>
+        
         </footer>
 		
 	</body>

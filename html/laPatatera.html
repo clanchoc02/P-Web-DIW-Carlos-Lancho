@@ -4,270 +4,266 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Visita Malpartida de Cáceres</title>
-        <link rel="icon" type="image/png" href="../imagenes/logo.png">
+        <link rel="icon" type="image/x-icon" href="../imagenes/favicon.ico">
         <link rel="stylesheet" href="../css/menu.css">
         <link rel="stylesheet" href="../css/laPatatera.css"> <!-- Enlace al archivo CSS -->
         <link rel="stylesheet" href="../css/pie.css">
+        <script defer src="../js/idiomas.js"></script>
     </head>
 
 	<body>
 		
 		<!-- Encabezado de la página -->
         <header class="encabezado">
-
-            <!-- Primera parte del encabezado (registro e idiomas) -->
+            <!-- Primera parte del encabezado: Login y selector de idioma -->
             <div id="encabezadoParte1">
-                
-                <!-- Sección para el registro o login -->
                 <div class="seccion1-1">
+                    <!-- Botón de login -->
                     <a>
                         <img src="../imagenes/login.png" alt="login.png" id="icono-login">
-                        <span>Registrarse</span>
+                        <span data-translate="registrarse">Registrarse</span>
                     </a>
                 </div>
-                
-                <!-- Sección para seleccionar idioma -->
                 <div class="seccion1-2">
-                    <!-- Input para seleccionar el idioma -->
-                    <input list="idiomas-lista" id="idiomas" placeholder="Selecciona un idioma">
-                    
-                    <!-- Lista de idiomas disponibles -->
+                    <!-- Selector de idioma con datalist -->
+                    <input list="idiomas-lista" id="idiomas" placeholder="Selecciona un idioma" data-translate="selecciona_idioma">
                     <datalist id="idiomas-lista">
                         <option value="Español"></option>
                         <option value="Inglés"></option>
                         <option value="Francés"></option>
-                        <option value="Alemán"></option>
-                        <option value="Italiano"></option>
                     </datalist>
-    
-                    <!-- Icono representativo del idioma -->
                     <label for="idioma-selector" class="seccion1-2">
                         <img src="../imagenes/idioma.png" alt="idioma.png" id="icono-idiomas">
                     </label>
                 </div>
-    
             </div>
-    
-            <!-- Segunda parte del encabezado (logo, título, escudo) -->
+        
+            <!-- Segunda parte del encabezado: Logo, título y escudo -->
             <div id="encabezadoParte2">
                 <section class="seccion2-1">
-                    <!-- Logo de la página -->
-                    <img id="logo" src="../imagenes/logo.png" alt="logo.png" title="Logo de Malpartida de Cáceres">
+                    <!-- Logo de Malpartida de Cáceres -->
+                    <img id="logo" src="../imagenes/Logotipo2.jpg" alt="logo.png" title="Logo de Malpartida de Cáceres">
                 </section>
                 <section>
-                    <!-- Título principal de la página -->
-                    <h1>Malpartida de Cáceres</h1>
+                    <!-- Título principal del sitio -->
+                    <h1 data-translate="bienvenido">Bienvenido a Malpartida de Cáceres</h1>
                 </section>
                 <section class="seccion2-2">
-                    <!-- Escudo de la localidad -->
+                    <!-- Escudo del municipio -->
                     <img id="escudo" src="../imagenes/escudo.png" alt="escudo.png" title="Escudo de Malpartida de Cáceres">
                 </section>
             </div>
-    
-            <!-- Tercera parte del encabezado (menú y búsqueda) -->
+        
+            <!-- Tercera parte del encabezado: Menú y búsqueda -->
             <div id="encabezadoParte3">
-    
-                <!-- Botón para abrir el menú -->
                 <div class="seccion3-1">
+                    <!-- Icono y botón del menú desplegable -->
                     <label for="menu-checkbox">
-                        <img src="../imagenes/menu.png" alt="Menú" id="icono-menu"> 
-                        <span>Menú</span>
+                        <img src="../imagenes/menu.png" alt="Menú" id="icono-menu">
+                        <span data-translate="menu">Menú</span>
                     </label>
                 </div>
-    
-                <!-- Campo de búsqueda -->
                 <div class="seccion3-2">
-                    <input type="text" id="cuadro-busqueda" placeholder="Buscar">
+                    <!-- Cuadro de búsqueda -->
+                    <input type="text" id="cuadro-busqueda" placeholder="Buscar" data-translate="buscar">
                     <label for="cuadro-busqueda">
                         <img src="../imagenes/lupa.png" alt="lupa.png" id="icono-lupa">
                     </label>
                 </div>
-                
             </div>
-    
-            <!-- Checkbox oculto para controlar el estado del menú -->
+        
+            <!-- Checkbox oculto para el control del menú desplegable -->
             <input type="checkbox" id="menu-checkbox" class="menu-checkbox">
-    
-            <!-- Submenú de navegación -->
+        
+            <!-- Navegación del submenú -->
             <nav class="submenu">
                 <ul>
+                    <!-- Enlace al inicio -->
                     <li>
                         <a class="menu inicio" href="index.html" data-title="Inicio">
                             <span>
-                                <span>Inicio</span>
+                                <span data-translate="inicio">Inicio</span>
                             </span>
                         </a>
                     </li>
+                    <!-- Enlace al turismo con submenú -->
                     <li>
                         <a class="menu turismo" href="#" data-title="Turismo">
                             <span>
-                                <span>Turismo</span>
+                                <span data-translate="turismo">Turismo</span>
                             </span>
                         </a>
                         <ul id="submenu">
-                            <li><a href="juegoTronos.html">"Juego de tronos"</a></li>
-                            <li><a href="losBarruecos.html">"Los Barruecos"</a></li>
-                            <li><a href="laPatatera.html">"La pedida de la patatera"</a></li>
-                            <li><a href="sanIsidro.html">"San Isidro"</a></li>
+                            <li><a href="juegoTronos.html" data-translate="juego_tronos_titulo">"Juego de Tronos"</a></li>
+                            <li><a href="losBarruecos.html" data-translate="los_barruecos_titulo">"Los Barruecos"</a></li>
+                            <li><a href="laPatatera.html" data-translate="la_patatera_titulo">"La pedida de la patatera"</a></li>
+                            <li><a href="sanIsidro.html" data-translate="san_isidro_titulo">"San Isidro"</a></li>
                         </ul>
                     </li>
+                    <!-- Enlace a favoritos -->
                     <li>
                         <a class="menu favoritos" href="#" data-title="Favoritos">
                             <span>
-                                <span>Favoritos</span>
+                                <span data-translate="favoritos">Favoritos</span>
                             </span>
                         </a>
                     </li>
+                    <!-- Enlace al mapa -->
                     <li>
                         <a class="menu mapa" href="mapa.html" data-title="Mapa">
                             <span>
-                                <span>Mapa</span>
+                                <span data-translate="mapa">Mapa</span>
                             </span>
                         </a>
                     </li>
+                    <!-- Enlace a la encuesta -->
                     <li>
                         <a class="menu encuesta" href="encuesta.html" data-title="Encuesta">
                             <span>
-                                <span>Encuesta</span>
+                                <span data-translate="encuesta">Encuesta</span>
                             </span>
                         </a>
                     </li>
                 </ul>
             </nav>
-    
         </header>
 		
         <main>
 
+            <!-- Imagen destacada de la Pedida de la Patatera -->
             <img id="imagen1" src="../imagenes/carrusel6.jpg" alt="Pedida de la Patatera" title="Pedida de la Patatera">
-
+        
+            <!-- Sección principal sobre la Pedida de la Patatera -->
             <div class="la_patatera">
-                        
-                <h2>Pedida de la Patatera</h2>
                 
-                <p>Fiesta de Interés Turístico Regional, esta celebración cuenta con una gran participación en Malpartida de Cáceres. Se celebran desfiles,
-                    concursos de comparas, verbenas,... pero el día grande de estas fiestas se celebra el Martes de Carnaval, con la Fiesta de 'La 
-                    Pedida de la Patatera'.</p>
-
-                <p>Esta fiesta tiene su origen a finales del siglo XIX, y radica en la costumbre de 'pedir patatera' por parte de los jóvenes, sobre todo quintos. 
-                El martes de Carnaval, los jóvenes celebraban la eminente llegada de la Cuaresma, pidiendo por las casas del pueblo viandas para después degustarlas 
-                en las 'tabernas' de la localidad. El embutido más económico y con el que más obsequiaban a los jóvenes era la patatera, producto elaborado con 
-                patata, grasa animal, carne de cerdo y pimentón. A partir de los años ochenta (concretamente en 1986), esta fiesta se recupera por algunas 
-                asociaciones y grupos de amigos de la localidad. Poco a poco, en esta fiesta comienza a participar gran número de personas, y la celebración 
-                toma un gran auge.</p>
+                <!-- Título de la sección -->
+                <h2 data-translate="patatera_titulo">Pedida de la Patatera</h2>
                 
+                <!-- Descripción general de la fiesta -->
+                <p data-translate="patatera_descripcion1">Fiesta de Interés Turístico Regional, esta celebración cuenta con una gran participación en Malpartida de Cáceres. Se celebran desfiles, concursos de comparsas, verbenas,... pero el día grande de estas fiestas se celebra el Martes de Carnaval, con la Fiesta de 'La Pedida de la Patatera'.</p>
+        
+                <p data-translate="patatera_descripcion2">Esta fiesta tiene su origen a finales del siglo XIX, y radica en la costumbre de 'pedir patatera' por parte de los jóvenes, sobre todo quintos. El martes de Carnaval, los jóvenes celebraban la eminente llegada de la Cuaresma, pidiendo por las casas del pueblo viandas para después degustarlas en las 'tabernas' de la localidad. El embutido más económico y con el que más obsequiaban a los jóvenes era la patatera, producto elaborado con patata, grasa animal, carne de cerdo y pimentón. A partir de los años ochenta (concretamente en 1986), esta fiesta se recupera por algunas asociaciones y grupos de amigos de la localidad. Poco a poco, en esta fiesta comienza a participar gran número de personas, y la celebración toma un gran auge.</p>
+                
+                <!-- Sección con artículos relacionados -->
                 <section class="articulo1">
-
+        
                     <div class="imagen2">
-                        
+                        <!-- Imagen del pasacalles -->
                         <img src="../imagenes/patatera2.jpg" alt="Pasacalles" title="Pasacalles">
-                    
-                        <p>Pasacalles</p>
-                        
+                        <p data-translate="patatera_pasacalles">Pasacalles</p>
                     </div>
                     
                     <div class="texto1">
-                    
-                        <p>Trajes de percal, simulando a las mujeres de antaño, y hombres con pantalón, camisa blanca y pañuelo al cuello de labrador, quieren recordar 
-                        el antiguo origen de la fiesta. Pero también, los trajes agitanados combinados con alegres pañuelos, recuerdan que es Carnaval y días de alegría. 
-                        Las cestas y alforjas no pueden faltar en esta celebración, pues aquí se hace acopio de patatera y otros embutidos, que serán degustadas a lo 
-                        largo del día.</p>
-
-                        <p>El valor de esta fiesta radica en la originalidad de celebrar un Carnaval de día, en cómo la fiesta ha evolucionado y sobre todo, en que es 
-                        una fiesta intergeneracional, donde conviven abuelos, padres, hijos y nietos.</p>
-                    
+                        <!-- Descripción de los trajes y elementos de la fiesta -->
+                        <p data-translate="patatera_descripcion3">Trajes de percal, simulando a las mujeres de antaño, y hombres con pantalón, camisa blanca y pañuelo al cuello de labrador, quieren recordar el antiguo origen de la fiesta. Pero también, los trajes agitanados combinados con alegres pañuelos, recuerdan que es Carnaval y días de alegría. Las cestas y alforjas no pueden faltar en esta celebración, pues aquí se hace acopio de patatera y otros embutidos, que serán degustados a lo largo del día.</p>
+        
+                        <p data-translate="patatera_descripcion4">El valor de esta fiesta radica en la originalidad de celebrar un Carnaval de día, en cómo la fiesta ha evolucionado y sobre todo, en que es una fiesta intergeneracional, donde conviven abuelos, padres, hijos y nietos.</p>
                     </div>
-
+        
                 </section>
                 
                 <section class="articulo2">
-                    
+    
                     <div class="texto2">
-                        
-                        <p> Actualmente esta celebración consiste en un pasacalles 
-                        amenizado con charangas, que comienza a las 12:00 y parte de la 
-                        Plaza Mayor. Se va simulando por las calles de Malpartida de 
-                        Cáceres 'la pedida' de este embutido. En torno al medio día se 
-                        llega de nuevo a la Plaza se degusta la patatera: todo el mundo disfruta 
-                        de las viandas que llevan en bonitas cestas, alforjas y carros de agua. 
-                        Después comenzará una verbena popular hasta bien entrada la noche.</p>
-
-                        <p>Esta fiesta, se ha convertido en el 'Día Grande' de Malpartida de Cáceres. 
-                        Durante este día acuden a la localidad gran número de personas procedentes 
-                        de pueblos de la comarca, así como de la capital cacereña. También gran 
-                        número de turistas llegan atraídos por la originalidad de la celebración, 
-                        la alegría y colorido de este Carnaval.</p>
-
-                        <p>Desde el año 2012, el Ayuntamiento de Malpartida de Cáceres viene organizando 
-                        las JORNADAS GASTRONÓMICAS DE LA PATATERA. Actividades en torno a esta fiesta que 
-                        comienzan el fin de semana anterior a la celebración del Carnaval, y que quieren 
-                        ser una antesala de oferta lúdica y gastronómica en torno a este producto: tapas 
-                        elaboradas con patatera, degustaciones, mercados gastronómicos, concursos 
-                        profesionales y populares de tapas y platos elaborados con patatera,… actividades 
-                        que permite conocer el embutido estrella de la localidad y todas las posibilidades 
-                        culinarias que posee.</p>
-                    
+                        <!-- Descripción del pasacalles y degustación -->
+                        <p data-translate="patatera_descripcion5">Actualmente esta celebración consiste en un pasacalles amenizado con charangas, que comienza a las 12:00 y parte de la Plaza Mayor. Se va simulando por las calles de Malpartida de Cáceres 'la pedida' de este embutido. En torno al medio día se llega de nuevo a la Plaza se degusta la patatera: todo el mundo disfruta de las viandas que llevan en bonitas cestas, alforjas y carros de agua. Después comenzará una verbena popular hasta bien entrada la noche.</p>
+                
+                        <!-- Descripción de la importancia de la fiesta para Malpartida -->
+                        <p data-translate="patatera_descripcion6">Esta fiesta, se ha convertido en el 'Día Grande' de Malpartida de Cáceres. Durante este día acuden a la localidad gran número de personas procedentes de pueblos de la comarca, así como de la capital cacereña. También gran número de turistas llegan atraídos por la originalidad de la celebración, la alegría y colorido de este Carnaval.</p>
+                
+                        <!-- Jornadas gastronómicas organizadas por el ayuntamiento -->
+                        <p data-translate="patatera_descripcion7">Desde el año 2012, el Ayuntamiento de Malpartida de Cáceres viene organizando las JORNADAS GASTRONÓMICAS DE LA PATATERA. Actividades en torno a esta fiesta que comienzan el fin de semana anterior a la celebración del Carnaval, y que quieren ser una antesala de oferta lúdica y gastronómica en torno a este producto: tapas elaboradas con patatera, degustaciones, mercados gastronómicos, concursos profesionales y populares de tapas y platos elaborados con patatera,… actividades que permite conocer el embutido estrella de la localidad y todas las posibilidades culinarias que posee.</p>
                     </div>
-
+                
                     <div class="imagen3">
-                        
+                        <!-- Imagen de la fiesta de interés -->
                         <img src="../imagenes/patatera3.jpg" alt="Fiesta de interés" title="Fiesta de interés">
-                    
-                        <p>Fiesta de interés</p>
-                        
+                        <p data-translate="patatera_interes">Fiesta de interés</p>
                     </div>
-
-                </section>
+                
+                </section>                
 
             </div>
 
         </main>
 		
-		<footer>
+		<!--Pie de la página-->
+        <footer>
 
+            <!-- Sección de redes sociales -->
             <div class="redes-sociales">
-
-                <h3>Síguenos en Redes Sociales</h3>
-
+        
+                <!-- Título de la sección de redes sociales -->
+                <h3 data-translate="redes_sociales">Síguenos en Redes Sociales</h3>
+        
+                <!-- Navegación con enlaces a las redes sociales -->
                 <nav>
+                    <!-- Enlace a Facebook -->
                     <a href="https://www.facebook.com/malpartidadecaceres" target="_blank">
                         <img src="../imagenes/boton_facebook.png" alt="Botón de Facebook" title="Dale a Me Guate en Facebook">
                     </a>
+                    <!-- Enlace a Twitter -->
                     <a href="https://twitter.com/Malpartida_cc" target="_blank">
                         <img src="../imagenes/boton_twitter.png" alt="Botón de Twitter" title="Sígueme en Twitter">
                     </a>
+                    <!-- Enlace a Google+ -->
                     <a href="https://plus.google.com/u/0/+MalpartidadeC%C3%A1ceres/posts" target="_blank">
                         <img src="../imagenes/boton_google.png" alt="Botón de Google" title="Añádeme a tus círculos">
                     </a>
+                    <!-- Enlace a LinkedIn -->
                     <a href="https://www.linkedin.com/in/aytomalpartidadecaceres" target="_blank">
                         <img src="../imagenes/boton_linkedin.png" alt="Botón de Linkedin" title="Contacta conmigo en Linkedin">
                     </a>
+                    <!-- Enlace a Pinterest -->
                     <a href="http://www.pinterest.com/malpartidacc/" target="_blank">
                         <img src="../imagenes/boton_pinterest.png" alt="Botón de Pinterest" title="Sígueme en Pinterest">
                     </a>
+                    <!-- Enlace a YouTube -->
                     <a href="http://www.youtube.com/channel/UCp-bf36ZuMCjM9Tm2NIQTvg" target="_blank">
                         <img src="../imagenes/boton_youtube.png" alt="Botón de YouTube" title="Sígueme en YouTube">
                     </a>
+                    <!-- Enlace a Extremadura.com -->
                     <a href="https://www.extremadura.com/perfil-de-malpartida-de-caceres" target="_blank">
                         <img src="../imagenes/boton_extremadura.png" alt="Botón de Extremadura" title="Sígueme en Extremadura.com">
                     </a>
                 </nav>
-
+        
             </div>
         
+            <!-- Sección de contacto -->
             <div class="contacto">
-                <h3>Contacto: </h3>
-                <p>Ayuntamiento de Malpartida de Cáceres.</p>
-                <p>Plaza Mayor nº 30 CP: 10910</p>
-                <p>Tlf.: 927 27 50 03</p>
-                <p>Fax: 927 27 61 74</p>
-                <p>Email: alcaldia@malpartidadecaceres.es</p>
+                <!-- Título de la sección de contacto -->
+                <h3 data-translate="contacto">Contacto: </h3>
+                <!-- Información del contacto -->
+                <p data-translate="direccion">Ayuntamiento de Malpartida de Cáceres.</p>
+                <p data-translate="plaza">Plaza Mayor nº 30 CP: 10910</p>
+                <p data-translate="telefono_pie">Tlf.: 927 27 50 03</p>
+                <p data-translate="fax">Fax: 927 27 61 74</p>
+                <p data-translate="email">Email: alcaldia@malpartidadecaceres.es</p>
             </div>
             
+            <!-- Separador horizontal -->
             <hr/>
                 
-            <p>© 2018 Copyright Malpartida de Cáceres.</p>
-
+            <!-- Texto de la licencia de creativecommons -->
+            <section class="licencia">
+                <p xmlns:cc="http://creativecommons.org/ns#" xmlns:dct="http://purl.org/dc/terms/"><a property="dct:title"
+                        rel="cc:attributionURL" href="https://clanchoc02.github.io/P-Web-DIW-Carlos-Lancho/html/index.html">Malpartida
+                        de Cáceres</a><span data-translate="licencia1"> por </span><span property="cc:attributionName">Carlos Lancho Cuadrado</span><span data-translate="licencia2">
+                        está licenciado bajo </span><a
+                        href="https://creativecommons.org/licenses/by-nc-nd/4.0/?ref=chooser-v1" target="_blank"
+                        rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC-ND 4.0<img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" alt=""><img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""><img
+                            style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+                            src="https://mirrors.creativecommons.org/presskit/icons/nd.svg?ref=chooser-v1" alt=""></a></p>
+            
+            </section>
+        
         </footer>
 		
 	</body>

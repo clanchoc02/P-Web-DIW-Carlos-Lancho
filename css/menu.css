@@ -1,5 +1,5 @@
 .encabezado {
-    background-color: rgba(0, 0, 0, 0.6); /* Fondo oscuro transparente */
+    background-color: rgba(0, 0, 0, 0.925); /* Fondo oscuro transparente */
     margin: 0;
     padding: 0;
     width: 100%;
@@ -97,6 +97,7 @@
 
     max-width: 15%;
     max-height: auto;
+    border-radius: 5px; /* Bordes redondeados */
 
 }
 
@@ -288,4 +289,91 @@ li:hover ul#submenu {
     color: white;
     padding: 2%;
     width: 100%;
+}
+
+#resultados-busqueda {
+    position: absolute;
+    background: #fff;
+    border: 1px solid #ccc;
+    max-height: 200px;
+    overflow-y: auto;
+    width: 200px;
+    z-index: 1000;
+    margin-top: 5px;
+}
+
+#resultados-busqueda ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+#resultados-busqueda li {
+    padding: 5px;
+    cursor: pointer;
+}
+
+#resultados-busqueda li:hover {
+    background-color: #f0f0f0;
+}
+
+@media (max-width: 768px) {
+    /* Ocultar el texto original del título */
+    #encabezadoParte2 h1 {
+        visibility: hidden;
+        position: relative;
+    }
+
+    /* Insertar el nuevo título */
+    #encabezadoParte2 h1::after {
+        content: "Malpartida de Cáceres"; /* Nuevo título */
+        visibility: visible;
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 90%;
+        text-align: center;
+    }
+
+    /* Ocultar imágenes */
+    #escudo {
+        display: none !important;
+    }
+}
+
+/* --- Responsividad para pantallas medianas (máximo 1024px) --- */
+@media (max-width: 1024px) {
+    .encabezado {
+        padding: 10px;
+        text-align: center;
+    }
+
+    #encabezadoParte1, #encabezadoParte2, #encabezadoParte3 {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: auto;
+    }
+
+    #encabezadoParte2 h1 {
+        font-size: 2em;
+        max-width: 70%;
+    }
+
+    .seccion1-1, .seccion3-1, .seccion1-2, .seccion3-2 {
+        justify-content: center;
+        text-align: center;
+    }
+
+    #logo {
+        max-width: 25%;
+    }
+
+    #escudo {
+        max-width: 15%;
+    }
+
+    #idiomas, #cuadro-busqueda {
+        width: 60%;
+    }
 }

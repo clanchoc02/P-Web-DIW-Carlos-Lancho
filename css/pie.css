@@ -1,13 +1,14 @@
 /* Estilo principal del footer */
 footer {
-    max-width: 100%; /* El footer ocupa todo el ancho disponible */
+    max-width: 50%; /* El footer ocupa todo el ancho disponible */
     background-color: #393333; /* Fondo oscuro */
     display: flex; /* Contenedor flexible */
     flex-direction: row; /* Por defecto, los elementos se colocan en fila */
     align-items: center; /* Centrar verticalmente los elementos */
     justify-content: space-between; /* Espaciar elementos hacia los extremos */
-    padding: 20px; /* Espaciado interno */
-    font-size: 17px; /* Tamaño del texto */
+    margin: auto;
+    padding: 10px; /* Espaciado interno */
+    font-size: 17px !important; /* Tamaño del texto */
     color: #FFF; /* Color blanco del texto */
     gap: 20px; /* Espaciado entre elementos */
     flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
@@ -76,6 +77,7 @@ h3 {
 hr {
     width: 80%; /* Ancho del separador */
     margin: 20px auto; /* Centrar y dar espacio vertical */
+    margin-bottom: 0%;
     border: 1px solid #7F7F7F; /* Color y grosor del separador */
 }
 
@@ -88,6 +90,30 @@ footer p:last-child {
     font-size: 14px; /* Tamaño más pequeño */
     color: #AAA; /* Color gris claro */
     margin-top: 10px;
+}
+
+.licencia {
+    color: #ddd; /* Color del texto */
+    text-align: center;
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    margin: auto;
+}
+
+.licencia a {
+    color: #00aaff; /* Color del enlace */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.licencia a:hover {
+    text-decoration: underline; /* Subrayado al pasar el ratón */
+}
+
+.licencia img {
+    height: 20px; /* Ajusta el tamaño de los iconos */
+    margin-left: 5px; /* Espacio entre iconos */
+    vertical-align: middle; /* Alineación con el texto */
 }
 
 /* --- Responsividad para pantallas medianas (máximo 1024px) --- */

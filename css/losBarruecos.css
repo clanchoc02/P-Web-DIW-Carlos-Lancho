@@ -8,9 +8,6 @@ body {
     margin: 0px; /* Elimina margen externo */
     background-color: #393333; /* Fondo oscuro */
     color: white; /* Texto blanco */
-    display: flex; /* Contenedor flexible */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
 }
 
 /* Título principal */
@@ -49,6 +46,7 @@ h2 {
     max-width: 100%; /* Ocupa todo el ancho disponible */
     height: auto; /* Ajusta la altura automáticamente */
     display: flex; /* Contenedor flexible */
+    flex-direction: column;
     align-items: center; /* Centra los elementos verticalmente */
     justify-content: center; /* Centra los elementos horizontalmente */
     flex-wrap: wrap; /* Permite que los elementos se ajusten */
@@ -105,6 +103,111 @@ h2 {
 .imagen2:hover, .imagen3 article:hover {
     transform: scale(1.05); /* Zoom suave al pasar el cursor */
 }
+
+
+/* ---Modal---*/
+.container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    padding: 10px;
+}
+
+/* Estilo del botón */
+.container button {
+    background-color: #ADD8E6; /* Fondo azul claro */
+    border: none; /* Sin borde */
+    font-size: 100%; /* Tamaño de la fuente */
+    padding: 10px 20px; /* Espaciado interno */
+    transition: transform 0.3s ease; /* Transición suave para hover */
+    color: #000000; /* Texto negro */
+    font-style: oblique; /* Texto inclinado */
+    border-radius: 2%;
+}
+
+.container button:hover {
+    transform: scale(1.05); /* Zoom suave al pasar el cursor */
+}
+
+/* ---- OCULTAR TOTALMENTE EL MODAL HASTA QUE SE ABRA ---- */
+.modal {
+    display: none !important;  
+    opacity: 0 !important;
+    visibility: hidden !important;
+}
+
+/* Mostrar correctamente cuando se abre */
+.modal.show {
+    display: flex !important;
+    opacity: 1 !important;
+    visibility: visible !important;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ---- ESTILOS DEL MODAL ---- */
+.modal-dialog {
+    max-width: 40%; /* Ajusta el tamaño del modal */
+    margin: auto;
+}
+
+/* Centrar completamente el modal */
+.modal-content {
+    background-color: #222;
+    color: white;
+    border-radius: 10px;
+    border: 1px solid #444;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* ---- Cabecera del modal ---- */
+.modal-header {
+    background-color: #111;
+    color: white;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    border-bottom: 1px solid #555;
+    padding: 10px;
+}
+
+/* Botón de cerrar*/
+.btn-close {
+    filter: invert(1); /* Hace que "Cerrar" sea blanca */
+}
+
+/* ---- Cuerpo del modal ---- */
+.modal-body {
+    padding: 15px;
+    text-align: center;
+}
+
+/* ---- AJUSTAR EL TAMAÑO DEL VIDEO ---- */
+.modal-body .ratio {
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 100%;
+}
+
+video {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* ---- MEJORAS EN LA ANIMACIÓN ---- */
+.modal.fade .modal-dialog {
+    transform: translateY(-30px);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+}
+
+.modal.show .modal-dialog {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+
 
 /* --- Responsividad para pantallas medianas (máximo 1024px) --- */
 @media (max-width: 1024px) {

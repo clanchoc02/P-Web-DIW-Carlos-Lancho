@@ -8,9 +8,6 @@ body {
     margin: 0px; /* Elimina margen por defecto */
     background-color: #393333; /* Fondo oscuro */
     color: white; /* Texto blanco */
-    display: flex; /* Contenedor flexible */
-    justify-content: center; /* Centra los elementos horizontalmente */
-    flex-wrap: wrap; /* Permite que los elementos se ajusten en filas */
 }
 
 /* Estilo del título principal */
