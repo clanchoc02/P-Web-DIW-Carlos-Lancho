@@ -118,17 +118,17 @@ div.localscroll {
 }
 
 /* Filas impares entre la 6ª y 16ª fila de la tabla */
-table tr:nth-child(odd):nth-child(n+6):nth-child(-n+16) {
+table tr:nth-child(even):nth-child(n+5):nth-child(-n+15) {
     background-color: #383838; /* Fondo gris claro */
 }
 
 /* Estilo para filas pares entre la 6ª y 16ª fila de la tabla */
-table tr:nth-child(even):nth-child(n+6):nth-child(-n+16) {
+table tr:nth-child(odd):nth-child(n+5):nth-child(-n+15) {
     background-color: #2b2b2b; /* Fondo gris oscuro */
 }
 
 /* Estilo para la primera celda de las filas entre la 6ª y 16ª fila */
-tr:nth-child(n+6):nth-child(-n+16) td:nth-child(1) {
+tr:nth-child(n+5):nth-child(-n+15) td:nth-child(1) {
     color: #00B050; /* Texto en verde */
 }
 

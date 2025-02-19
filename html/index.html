@@ -25,7 +25,7 @@
         <div id="encabezadoParte1">
             <div class="seccion1-1">
                 <!-- Botón de login -->
-                <a>
+                <a title="Pinche aquí para registrarse">
                     <img src="../imagenes/login.png" alt="login.png" id="icono-login">
                     <span data-translate="registrarse">Registrarse</span>
                 </a>
@@ -86,7 +86,7 @@
             <ul>
                 <!-- Enlace al inicio -->
                 <li>
-                    <a class="menu inicio" href="index.html" data-title="Inicio">
+                    <a class="menu inicio" href="index.html" data-title="Inicio" title="Pinche aquí para ir a inicio">
                         <span>
                             <span data-translate="inicio">Inicio</span>
                         </span>
@@ -94,21 +94,21 @@
                 </li>
                 <!-- Enlace al turismo con submenú -->
                 <li>
-                    <a class="menu turismo" href="#" data-title="Turismo">
+                    <a class="menu turismo" href="#" data-title="Turismo" title="Este enlace no está disponible">
                         <span>
                             <span data-translate="turismo">Turismo</span>
                         </span>
                     </a>
                     <ul id="submenu">
-                        <li><a href="juegoTronos.html" data-translate="juego_tronos_titulo">"Juego de Tronos"</a></li>
-                        <li><a href="losBarruecos.html" data-translate="los_barruecos_titulo">"Los Barruecos"</a></li>
-                        <li><a href="laPatatera.html" data-translate="la_patatera_titulo">"La pedida de la patatera"</a></li>
-                        <li><a href="sanIsidro.html" data-translate="san_isidro_titulo">"San Isidro"</a></li>
+                        <li><a href="juegoTronos.html" data-translate="juego_tronos_titulo" title="Pinche aquí para ir a la página de Juego de Tronos">"Juego de Tronos"</a></li>
+                        <li><a href="losBarruecos.html" data-translate="los_barruecos_titulo" title="Pinche aquí para ir a la página de Los Barruecos">"Los Barruecos"</a></li>
+                        <li><a href="laPatatera.html" data-translate="la_patatera_titulo" title="Pinche aquí para ir a la página de La Patatera">"La pedida de la patatera"</a></li>
+                        <li><a href="sanIsidro.html" data-translate="san_isidro_titulo" title="Pinche aquí para ir a la página de San Isidro">"San Isidro"</a></li>
                     </ul>
                 </li>
                 <!-- Enlace a favoritos -->
                 <li>
-                    <a class="menu favoritos" href="#" data-title="Favoritos">
+                    <a class="menu favoritos" href="#" data-title="Favoritos" title="Este enlace no está disponible">
                         <span>
                             <span data-translate="favoritos">Favoritos</span>
                         </span>
@@ -116,7 +116,7 @@
                 </li>
                 <!-- Enlace al mapa -->
                 <li>
-                    <a class="menu mapa" href="mapa.html" data-title="Mapa">
+                    <a class="menu mapa" href="mapa.html" data-title="Mapa" title="Pinche aquí para ir a la página del Mapa de la página">
                         <span>
                             <span data-translate="mapa">Mapa</span>
                         </span>
@@ -124,7 +124,7 @@
                 </li>
                 <!-- Enlace a la encuesta -->
                 <li>
-                    <a class="menu encuesta" href="encuesta.html" data-title="Encuesta">
+                    <a class="menu encuesta" href="encuesta.html" data-title="Encuesta" title="Pinche aquí para ir a la página de la encuesta">
                         <span>
                             <span data-translate="encuesta">Encuesta</span>
                         </span>
@@ -149,7 +149,7 @@
 
                 <!-- Item 1: Escenario Juego de Tronos -->
                 <div class="galeria-item">
-                    <a href="juegoTronos.html">
+                    <a href="juegoTronos.html" title="Pinche aquí para ir a la página de Juego de Tronos">
                         <img src="../imagenes/juego_de_tronos1.jpg" alt="Imagen propiedad del Ayuntamiento de Malpartida de Cáceres" title="Imagen artificial de una escena de Juego de Tronos">
                         <h3 data-translate="galeria_tronos">Escenario Juego de Tronos</h3>
                     </a>
@@ -157,14 +157,14 @@
 
                 <!-- Item 2: Los Barruecos -->
                 <div class="galeria-item">
-                    <a href="losBarruecos.html">
+                    <a href="losBarruecos.html" title="Pinche aquí para ir a la página de Los Barruecos">
                         <img src="../imagenes/carrusel2.jpg" alt="Imagen propiedad del Ayuntamiento de Malpartida de Cáceres" title="Imagen del 25 Aniversario de los Barruecos">
                         <h3 data-translate="galeria_barruecos">Los Barruecos</h3>
                     </a>
                 </div>
 
                 <!-- Item 3: La Patatera -->
-                <div class="galeria-item">
+                <div class="galeria-item" title="Pinche aquí para ir a la página de La Patatera">
                     <a href="laPatatera.html">
                         <img src="../imagenes/carrusel6.jpg" alt="Imagen propiedad del Ayuntamiento de Malpartida de Cáceres" title="Imagen de una patatera">
                         <h3 data-translate="galeria_patatera">La patatera</h3>
@@ -173,8 +173,8 @@
 
                 <!-- Item 4: San Isidro -->
                 <div class="galeria-item">
-                    <a href="sanIsidro.html">
-                        <img src="../imagenes/san_isidro1.jpg" alt="Imagen de la festividad de San Isidro">
+                    <a href="sanIsidro.html" title="Pinche aquí para ir a la página de San Isidro">
+                        <img src="../imagenes/san_isidro1.jpg" alt="Imagen propiedad del Ayuntamiento de Malpartida de Cáceres" title="Imagen de la festividad de San Isidro">
                         <h3 data-translate="galeria_isidro">San Isidro</h3>
                     </a>
                 </div>
@@ -186,131 +186,135 @@
 
                 <table class="tabla">
                     <!-- Encabezado de la tabla con logo y título -->
-                    <tr>
-                        <td colspan="2">
-                            <table>
-                                <tr>
-                                    <th>
-                                        <!-- Logo de Malpartida de Cáceres -->
-                                        <img class="logotipo_tabla" src="../imagenes/Logotipo2.jpg" alt="Imagen" title="Logo de Malpartida de Cáceres">
-                                    </th>
-                                    <th>
-                                        <!-- Título principal -->
-                                        <h2 data-translate="titulo_tabla">Malpartida de Cáceres</h2>
-                                    </th>
-                                    <th>
-                                        <!-- Escudo del municipio -->
-                                        <img class="escudo_tabla" src="../imagenes/escudo.png" alt="Imagen" title="Escudo de Malpartida de Cáceres">
-                                    </th>
-                                </tr>
-                            </table>
-                        </td>
-                    </tr>
+                     <thead>
+                        <tr>
+                            <td colspan="2">
+                                <table>
+                                    <tr>
+                                        <th>
+                                            <!-- Logo de Malpartida de Cáceres -->
+                                            <img class="logotipo_tabla" src="../imagenes/Logotipo2.jpg" alt="Imagen" title="Logo de Malpartida de Cáceres">
+                                        </th>
+                                        <th scope="row">
+                                            <!-- Título principal -->
+                                            <h2 data-translate="titulo_tabla">Malpartida de Cáceres</h2>
+                                        </th>
+                                        <th>
+                                            <!-- Escudo del municipio -->
+                                            <img class="escudo_tabla" src="../imagenes/escudo.png" alt="Imagen" title="Escudo de Malpartida de Cáceres">
+                                        </th>
+                                    </tr>
+                                </table>
+                            </td>
+                        </tr>
+                    </thead>
 
-                    <!-- Título de la tabla -->
-                    <tr>
-                        <td colspan="2" class="titulos" data-translate="municipio_titulo">Municipio de España y pueblo</td>
-                    </tr>
+                    <tbody>
+                        <!-- Título de la tabla -->
+                        <tr>
+                            <th scope="col" colspan="2" class="titulos" data-translate="municipio_titulo">Municipio de España y pueblo</th>
+                        </tr>
 
-                    <!-- Fila con imágenes y descripciones -->
-                    <tr>
-                        <td>
-                            <!-- Imagen y descripción 1 -->
-                            <img src="../imagenes/imagen1_tabla.jpeg" alt="Imagen" title="Vista general de la localidad.">
-                            <p data-translate="vista_general">Vista general de la localidad.</p>
-                        </td>
-                        <td>
-                            <!-- Imagen y descripción 2 -->
-                            <img src="../imagenes/imagen2_tabla.webp" alt="Imagen propiedad de Google" title="Vista general de la localidad.">
-                            <p data-translate="ubicacion_espana">Ubicación de Malpartida de Cáceres en España</p>
-                        </td>
-                    </tr>
+                        <!-- Fila con imágenes y descripciones -->
+                        <tr>
+                            <td>
+                                <!-- Imagen y descripción 1 -->
+                                <img src="../imagenes/imagen1_tabla.jpeg" alt="Imagen" title="Vista general de la localidad.">
+                                <p data-translate="vista_general">Vista general de la localidad.</p>
+                            </td>
+                            <td>
+                                <!-- Imagen y descripción 2 -->
+                                <img src="../imagenes/imagen2_tabla.webp" alt="Imagen propiedad de Google" title="Vista general de la localidad.">
+                                <p data-translate="ubicacion_espana">Ubicación de Malpartida de Cáceres en España</p>
+                            </td>
+                        </tr>
 
-                    <!-- Fila con mapa y descripción -->
-                    <tr>
-                        <td>
-                            <!-- Imagen y descripción 3 -->
-                            <img src="../imagenes/imagen3_tabla.png" alt="Imagen propiedad de Google" title="Ubicación de Malpartida de Cáceres en la provincia de Cáceres.">
-                            <p data-translate="ubicacion_provincia">Ubicación de Malpartida de Cáceres en la provincia de Cáceres.</p>
-                        </td>
-                        <td>
-                            <!-- Enlaces al mapa -->
-                            <a href="https://es.wikipedia.org/wiki/Malpartida_de_C%C3%A1ceres#/map/0" target="_blank">
-                                <img src="../imagenes/mapa.png" alt="Imagen propiedad de Google" title="Ver mapa">
-                            </a>
-                            <a href="https://es.wikipedia.org/wiki/Malpartida_de_C%C3%A1ceres#/map/0" target="_blank">
-                                <p data-translate="ver_mapa" title="Ver mapa">Ver mapa</p>
-                            </a>
-                        </td>
-                    </tr>
+                        <!-- Fila con mapa y descripción -->
+                        <tr>
+                            <td>
+                                <!-- Imagen y descripción 3 -->
+                                <img src="../imagenes/imagen3_tabla.png" alt="Imagen propiedad de Google" title="Ubicación de Malpartida de Cáceres en la provincia de Cáceres.">
+                                <p data-translate="ubicacion_provincia">Ubicación de Malpartida de Cáceres en la provincia de Cáceres.</p>
+                            </td>
+                            <td>
+                                <!-- Enlaces al mapa -->
+                                <a href="https://es.wikipedia.org/wiki/Malpartida_de_C%C3%A1ceres#/map/0" target="_blank">
+                                    <img src="../imagenes/mapa.png" alt="Imagen propiedad de Google" title="Ver mapa">
+                                </a>
+                                <a href="https://es.wikipedia.org/wiki/Malpartida_de_C%C3%A1ceres#/map/0" target="_blank" title="Pinche aquí para ver el mapa del pueblo de wikipedia">
+                                    <p data-translate="ver_mapa" title="Ver mapa">Ver mapa</p>
+                                </a>
+                            </td>
+                        </tr>
 
-                    <!-- Información general -->
-                    <tr>
-                        <td colspan="2" class="titulos" data-translate="informacion_general">Información general</td>
-                    </tr>
+                        <!-- Información general -->
+                        <tr>
+                            <th scope="col" colspan="2" class="titulos" data-translate="informacion_general">Información general</th>
+                        </tr>
 
-                    <!-- Filas con información clave -->
-                    <tr>
-                        <td data-translate="pais">País</td>
-                        <td data-translate="pais_nombre">España</td>
-                    </tr>
-                    <tr>
-                        <td data-translate="comunidad_autonoma">Com. autónoma</td>
-                        <td data-translate="comunidad_nombre">Extremadura</td>
-                    </tr>
-                    <tr>
-                        <td data-translate="provincia">Provincia</td>
-                        <td data-translate="provincia_nombre">Cáceres</td>
-                    </tr>
-                    <tr>
-                        <td data-translate="partido_judicial">Partido judicial</td>
-                        <td data-translate="partido_nombre">Cáceres</td>
-                    </tr>
-                    <tr>
-                        <td data-translate="mancomunidad">Mancomunidad</td>
-                        <td data-translate="mancomunidad_nombre">Tajo-Salor</td>
-                    </tr>
-                    <tr>
-                        <td data-translate="ubicacion">Ubicación</td>
-                        <td>
-                            <a href="http://tools.wmflabs.org/geohack/geohack.php?language=es&pagename=Malpartida_de_C%C3%A1ceres&params=39.445575_N_-6.5058549_E_type:city" target="_blank">
-                                39°26′44″N 6°30′21″O
-                            </a>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td data-translate="superficie">Superficie</td>
-                        <td data-translate="superficie_valor">33,73 km²</td>
-                    </tr>
-                    <tr>
-                        <td data-translate="poblacion">Población</td>
-                        <td data-translate="poblacion_valor">4086 hab. (2023)</td>
-                    </tr>
-                    <tr>
-                        <td data-translate="gentilicio">Gentilicio</td>
-                        <td data-translate="gentilicio_valor">malpartideño, -a</td>
-                    </tr>
-                    <tr>
-                        <td data-translate="codigo_postal">Código postal</td>
-                        <td data-translate="codigo_postal_valor">10910</td>
-                    </tr>
-                    <tr>
-                        <td data-translate="alcalde">Alcalde (2024)</td>
-                        <td data-translate="alcalde_nombre">Alfredo Aguilera</td>
-                    </tr>
+                        <!-- Filas con información clave -->
+                        <tr>
+                            <td id="celda_pais" scope="row" data-translate="pais">País</td>
+                            <td headers="celda_pais" data-translate="pais_nombre">España</td>
+                        </tr>
+                        <tr>
+                            <td id="celda_comunidad" scope="row"data-translate="comunidad_autonoma">Com. autónoma</td>
+                            <td headers="comunidad" data-translate="comunidad_nombre">Extremadura</td>
+                        </tr>
+                        <tr>
+                            <td id="celda_provincia" scope="row" data-translate="provincia">Provincia</td>
+                            <td headers="celda_provincia" data-translate="provincia_nombre">Cáceres</td>
+                        </tr>
+                        <tr>
+                            <td id="celda_partido_judicial" scope="row" data-translate="partido_judicial">Partido judicial</td>
+                            <td headers="celda_partido_judicial" data-translate="partido_nombre">Cáceres</td>
+                        </tr>
+                        <tr>
+                            <td id="celda_mancomunidad" scope="row" data-translate="mancomunidad">Mancomunidad</td>
+                            <td headers="celda_mancomunidad" data-translate="mancomunidad_nombre">Tajo-Salor</td>
+                        </tr>
+                        <tr>
+                            <td id="celda_ubicacion" scope="row" data-translate="ubicacion">Ubicación</td>
+                            <td headers="celda_ubicacion">
+                                <a href="http://tools.wmflabs.org/geohack/geohack.php?language=es&pagename=Malpartida_de_C%C3%A1ceres&params=39.445575_N_-6.5058549_E_type:city" target="_blank" title="Pinche aquí para ver las coordenadas del pueblo en wikipedia">
+                                    39°26′44″N 6°30′21″O
+                                </a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="celda_superficie" scope="row"data-translate="superficie">Superficie</td>
+                            <td headers="celda_superficie" data-translate="superficie_valor">33,73 km²</td>
+                        </tr>
+                        <tr>
+                            <td id="celda_poblacion" scope="row" data-translate="poblacion">Población</td>
+                            <td headers="celda_poblacion" data-translate="poblacion_valor">4086 hab. (2023)</td>
+                        </tr>
+                        <tr>
+                            <td id="celda_gentilicio" scope="row" data-translate="gentilicio">Gentilicio</td>
+                            <td headers="celda_gentilicio" data-translate="gentilicio_valor">malpartideño, -a</td>
+                        </tr>
+                        <tr>
+                            <td id="celda_codigo_postal" scope="row" data-translate="codigo_postal">Código postal</td>
+                            <td headers="celda_codigo_postal" data-translate="codigo_postal_valor">10910</td>
+                        </tr>
+                        <tr>
+                            <td id="celda_alcalde" scope="row" data-translate="alcalde">Alcalde (2024)</td>
+                            <td headers="celda_alcalde" data-translate="alcalde_nombre">Alfredo Aguilera</td>
+                        </tr>
 
-                    <tr>
-                        <td colspan="2" class="titulos" data-translate="audio">Audio introductorio</td>
-                    </tr>
+                        <tr>
+                            <th scope="col" colspan="2" class="titulos" data-translate="audio">Audio introductorio</th>
+                        </tr>
 
-                    <tr>
-                        <td colspan="2">
-                            <audio id="audioLocal" controls>
-                                <source src="../audio/Audio.mp3" type="audio/mpeg">
-                                <span data-translate="error_audio">Tu navegador no soporta el audio.</span>
-                            </audio>                            
-                        </td>
-                    </tr>
+                        <tr>
+                            <td colspan="2">
+                                <audio id="audioLocal" controls>
+                                    <source src="../audio/Audio.mp3" type="audio/mpeg">
+                                    <span data-translate="error_audio">Tu navegador no soporta el audio.</span>
+                                </audio>                            
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
 
             </div>
@@ -331,31 +335,31 @@
             <!-- Navegación con enlaces a las redes sociales -->
             <nav>
                 <!-- Enlace a Facebook -->
-                <a href="https://www.facebook.com/malpartidadecaceres" target="_blank">
+                <a href="https://www.facebook.com/malpartidadecaceres" target="_blank" title="Acceder a Facebook">
                     <img src="../imagenes/boton_facebook.png" alt="Botón de Facebook" title="Dale a Me Guate en Facebook">
                 </a>
                 <!-- Enlace a Twitter -->
-                <a href="https://twitter.com/Malpartida_cc" target="_blank">
+                <a href="https://twitter.com/Malpartida_cc" target="_blank" title="Acceder a Twitter">
                     <img src="../imagenes/boton_twitter.png" alt="Botón de Twitter" title="Sígueme en Twitter">
                 </a>
                 <!-- Enlace a Google+ -->
-                <a href="https://plus.google.com/u/0/+MalpartidadeC%C3%A1ceres/posts" target="_blank">
+                <a href="https://plus.google.com/u/0/+MalpartidadeC%C3%A1ceres/posts" target="_blank" title="Acceder a Google+">
                     <img src="../imagenes/boton_google.png" alt="Botón de Google" title="Añádeme a tus círculos">
                 </a>
                 <!-- Enlace a LinkedIn -->
-                <a href="https://www.linkedin.com/in/aytomalpartidadecaceres" target="_blank">
+                <a href="https://www.linkedin.com/in/aytomalpartidadecaceres" target="_blank" title="Acceder a LinkedIn">
                     <img src="../imagenes/boton_linkedin.png" alt="Botón de Linkedin" title="Contacta conmigo en Linkedin">
                 </a>
                 <!-- Enlace a Pinterest -->
-                <a href="http://www.pinterest.com/malpartidacc/" target="_blank">
+                <a href="http://www.pinterest.com/malpartidacc/" target="_blank" title="Acceder a Pinterest">
                     <img src="../imagenes/boton_pinterest.png" alt="Botón de Pinterest" title="Sígueme en Pinterest">
                 </a>
                 <!-- Enlace a YouTube -->
-                <a href="http://www.youtube.com/channel/UCp-bf36ZuMCjM9Tm2NIQTvg" target="_blank">
+                <a href="http://www.youtube.com/channel/UCp-bf36ZuMCjM9Tm2NIQTvg" target="_blank" title="Acceder a YouTube">
                     <img src="../imagenes/boton_youtube.png" alt="Botón de YouTube" title="Sígueme en YouTube">
                 </a>
                 <!-- Enlace a Extremadura.com -->
-                <a href="https://www.extremadura.com/perfil-de-malpartida-de-caceres" target="_blank">
+                <a href="https://www.extremadura.com/perfil-de-malpartida-de-caceres" target="_blank" title="Acceder a Extremadura.com">
                     <img src="../imagenes/boton_extremadura.png" alt="Botón de Extremadura" title="Sígueme en Extremadura.com">
                 </a>
             </nav>

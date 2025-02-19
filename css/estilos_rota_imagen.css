@@ -119,6 +119,11 @@ body {
     color: inherit; /* Hereda el color del padre */
 }
 
+.enlace:hover {
+    border: 1px solid  #00FFFF;
+    box-shadow: 0 0 10px #00FFFF; /* Efecto de brillo */
+}
+
 /* Contenedor de la descripción */
 .descripcion {
     text-align: right; /* Texto alineado a la derecha */

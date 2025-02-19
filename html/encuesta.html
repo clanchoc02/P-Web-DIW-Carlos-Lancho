@@ -23,7 +23,7 @@
         <div id="encabezadoParte1">
             <div class="seccion1-1">
                 <!-- Botón de login -->
-                <a>
+                <a title="Pinche aquí para registrarse">
                     <img src="../imagenes/login.png" alt="login.png" id="icono-login">
                     <span data-translate="registrarse">Registrarse</span>
                 </a>
@@ -84,7 +84,7 @@
             <ul>
                 <!-- Enlace al inicio -->
                 <li>
-                    <a class="menu inicio" href="index.html" data-title="Inicio">
+                    <a class="menu inicio" href="index.html" data-title="Inicio" title="Pinche aquí para ir a inicio">
                         <span>
                             <span data-translate="inicio">Inicio</span>
                         </span>
@@ -92,21 +92,21 @@
                 </li>
                 <!-- Enlace al turismo con submenú -->
                 <li>
-                    <a class="menu turismo" href="#" data-title="Turismo">
+                    <a class="menu turismo" href="#" data-title="Turismo" title="Este enlace no está disponible">
                         <span>
                             <span data-translate="turismo">Turismo</span>
                         </span>
                     </a>
                     <ul id="submenu">
-                        <li><a href="juegoTronos.html" data-translate="juego_tronos_titulo">"Juego de Tronos"</a></li>
-                        <li><a href="losBarruecos.html" data-translate="los_barruecos_titulo">"Los Barruecos"</a></li>
-                        <li><a href="laPatatera.html" data-translate="la_patatera_titulo">"La pedida de la patatera"</a></li>
-                        <li><a href="sanIsidro.html" data-translate="san_isidro_titulo">"San Isidro"</a></li>
+                        <li><a href="juegoTronos.html" data-translate="juego_tronos_titulo" title="Pinche aquí para ir a la página de Juego de Tronos">"Juego de Tronos"</a></li>
+                        <li><a href="losBarruecos.html" data-translate="los_barruecos_titulo" title="Pinche aquí para ir a la página de Los Barruecos">"Los Barruecos"</a></li>
+                        <li><a href="laPatatera.html" data-translate="la_patatera_titulo" title="Pinche aquí para ir a la página de La Patatera">"La pedida de la patatera"</a></li>
+                        <li><a href="sanIsidro.html" data-translate="san_isidro_titulo" title="Pinche aquí para ir a la página de San Isidro">"San Isidro"</a></li>
                     </ul>
                 </li>
                 <!-- Enlace a favoritos -->
                 <li>
-                    <a class="menu favoritos" href="#" data-title="Favoritos">
+                    <a class="menu favoritos" href="#" data-title="Favoritos" title="Este enlace no está disponible">
                         <span>
                             <span data-translate="favoritos">Favoritos</span>
                         </span>
@@ -114,7 +114,7 @@
                 </li>
                 <!-- Enlace al mapa -->
                 <li>
-                    <a class="menu mapa" href="mapa.html" data-title="Mapa">
+                    <a class="menu mapa" href="mapa.html" data-title="Mapa" title="Pinche aquí para ir a la página del Mapa de la página">
                         <span>
                             <span data-translate="mapa">Mapa</span>
                         </span>
@@ -122,7 +122,7 @@
                 </li>
                 <!-- Enlace a la encuesta -->
                 <li>
-                    <a class="menu encuesta" href="encuesta.html" data-title="Encuesta">
+                    <a class="menu encuesta" href="encuesta.html" data-title="Encuesta" title="Pinche aquí para ir a la página de la encuesta">
                         <span>
                             <span data-translate="encuesta">Encuesta</span>
                         </span>
@@ -304,12 +304,12 @@
 
                             <section>
                                 <label for="submit" data-translate="enviar">Pinche aquí para enviar:</label>
-                                <input type="submit" id="submit" name="submit" tabindex="23">
+                                <input type="submit" id="submit" name="submit" aria-label="Enviar encuesta" tabindex="23">
                             </section>
 
                             <section>
                                 <label for="reset" data-translate="borrar">Pinche aquí para borrar:</label>
-                                <input type="reset" id="reset" name="reset" value="Borrar" tabindex="24">
+                                <input type="reset" id="reset" name="reset" aria-label="Borrar encuesta" value="Borrar" tabindex="24">
                             </section>
 
                         </div>
@@ -336,31 +336,31 @@
             <!-- Navegación con enlaces a las redes sociales -->
             <nav>
                 <!-- Enlace a Facebook -->
-                <a href="https://www.facebook.com/malpartidadecaceres" target="_blank">
+                <a href="https://www.facebook.com/malpartidadecaceres" target="_blank" title="Acceder a Facebook">
                     <img src="../imagenes/boton_facebook.png" alt="Botón de Facebook" title="Dale a Me Guate en Facebook">
                 </a>
                 <!-- Enlace a Twitter -->
-                <a href="https://twitter.com/Malpartida_cc" target="_blank">
+                <a href="https://twitter.com/Malpartida_cc" target="_blank" title="Acceder a Twitter">
                     <img src="../imagenes/boton_twitter.png" alt="Botón de Twitter" title="Sígueme en Twitter">
                 </a>
                 <!-- Enlace a Google+ -->
-                <a href="https://plus.google.com/u/0/+MalpartidadeC%C3%A1ceres/posts" target="_blank">
+                <a href="https://plus.google.com/u/0/+MalpartidadeC%C3%A1ceres/posts" target="_blank" title="Acceder a Google+">
                     <img src="../imagenes/boton_google.png" alt="Botón de Google" title="Añádeme a tus círculos">
                 </a>
                 <!-- Enlace a LinkedIn -->
-                <a href="https://www.linkedin.com/in/aytomalpartidadecaceres" target="_blank">
+                <a href="https://www.linkedin.com/in/aytomalpartidadecaceres" target="_blank" title="Acceder a LinkedIn">
                     <img src="../imagenes/boton_linkedin.png" alt="Botón de Linkedin" title="Contacta conmigo en Linkedin">
                 </a>
                 <!-- Enlace a Pinterest -->
-                <a href="http://www.pinterest.com/malpartidacc/" target="_blank">
+                <a href="http://www.pinterest.com/malpartidacc/" target="_blank" title="Acceder a Pinterest">
                     <img src="../imagenes/boton_pinterest.png" alt="Botón de Pinterest" title="Sígueme en Pinterest">
                 </a>
                 <!-- Enlace a YouTube -->
-                <a href="http://www.youtube.com/channel/UCp-bf36ZuMCjM9Tm2NIQTvg" target="_blank">
+                <a href="http://www.youtube.com/channel/UCp-bf36ZuMCjM9Tm2NIQTvg" target="_blank" title="Acceder a YouTube">
                     <img src="../imagenes/boton_youtube.png" alt="Botón de YouTube" title="Sígueme en YouTube">
                 </a>
                 <!-- Enlace a Extremadura.com -->
-                <a href="https://www.extremadura.com/perfil-de-malpartida-de-caceres" target="_blank">
+                <a href="https://www.extremadura.com/perfil-de-malpartida-de-caceres" target="_blank" title="Acceder a Extremadura.com">
                     <img src="../imagenes/boton_extremadura.png" alt="Botón de Extremadura" title="Sígueme en Extremadura.com">
                 </a>
             </nav>
